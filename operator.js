@@ -76,15 +76,28 @@ let y = 3;
 
 //                    Ternary operator
 
-let point = 100;
+// let point = 100;
 
 // using ternary operator
-customer = point > 100 ? "gold" : "selver ";
-console.log(`you are a ${customer} customer`);
+// customer = point > 100 ? "gold" : "selver ";
+// console.log(`you are a ${customer} customer`);
 
 // using if else
 // if (point >= 100) {
 //   console.log("you are a gold customer");
 // } else {
 //   console.log("you are silver customer ");
-// }
+
+// Logical and  (&&)
+
+let heightincome = true;
+let creditincome = true;
+
+isApproved = heightincome && creditincome;
+console.log(isApproved);
+
+heightincome = false;
+creditincome = false;
+
+isApproved = heightincome || creditincome;
+console.log(isApproved);
