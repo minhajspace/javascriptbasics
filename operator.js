@@ -57,19 +57,34 @@ let y = 3;
 
 //  Relational
 
-x = "1";
+// x = "1";
 
-// console.log(x > 1);
-// console.log(x >= 1);
-// console.log(x < 2);
-// console.log(x <= 2);
+// // console.log(x > 1);
+// // console.log(x >= 1);
+// // console.log(x < 2);
+// // console.log(x <= 2);
 
-// equality
+// // equality
 
-// lose equality
-console.log(x == 1);
+// // lose equality
+// console.log(x == 1);
 
-// strict equality
-console.log(x === 1);
+// // strict equality
+// console.log(x === 1);
 
-console.log(x !== 1);
+// console.log(x !== 1);
+
+//                    Ternary operator
+
+let point = 100;
+
+// using ternary operator
+customer = point > 100 ? "gold" : "selver ";
+console.log(`you are a ${customer} customer`);
+
+// using if else
+// if (point >= 100) {
+//   console.log("you are a gold customer");
+// } else {
+//   console.log("you are silver customer ");
+// }
