@@ -43,13 +43,33 @@ let y = 3;
 
 //                          Assingment operator
 
-x = 10;
-y = 2;
+// x = 10;
+// y = 2;
 
-x = x + 1;
-console.log(x);
+// x = x + 1;
+// console.log(x);
 
-x += 1; // short hand
+// x += 1; // short hand
 
-x *= 3;
-console.log(x);
+// x *= 3;
+// console.log(x);
+//                     comparison operator
+
+//  Relational
+
+x = "1";
+
+// console.log(x > 1);
+// console.log(x >= 1);
+// console.log(x < 2);
+// console.log(x <= 2);
+
+// equality
+
+// lose equality
+console.log(x == 1);
+
+// strict equality
+console.log(x === 1);
+
+console.log(x !== 1);
