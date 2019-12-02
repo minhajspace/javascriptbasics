@@ -14,13 +14,13 @@ let y = 3;
 
 // //  division
 
-// console.log(x / y);
+//console.log(x / y);
 
 // // module
 
 // console.log(x % y);
 
-// console.log(x ** y);
+//console.log(x ** y);
 
 // increment
 // pre increment
@@ -40,3 +40,16 @@ let y = 3;
 
 //console.log(x--);
 //console.log(x);
+
+//                          Assingment operator
+
+x = 10;
+y = 2;
+
+x = x + 1;
+console.log(x);
+
+x += 1; // short hand
+
+x *= 3;
+console.log(x);
