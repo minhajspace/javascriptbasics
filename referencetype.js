@@ -21,4 +21,23 @@
 // person["name"] = "urooj";
 // console.log(person);
 
-//
+//                                 Array
+
+// let selectedColors = ["red", "greed", "orange", "yello", "black"];
+// console.log(selectedColors);
+
+// selectedColors[5] = 23;
+// console.log(selectedColors);
+
+//                                function
+
+// function greet(name) {
+//   console.log(`hello ${name}`);
+// }
+// greet("minhaj");
+
+// function add(number1, number2) {
+//   console.log((result = number1 + number2));
+// }
+
+// add(4, 6);
