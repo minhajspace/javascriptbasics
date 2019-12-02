@@ -1,20 +1,24 @@
-let person = {
-  name: "vishal",
-  lastname: "anand",
-  age: 23,
-  city: "kanpur",
-  state: "Up"
-};
+// Object
 
-console.log(person);
+// let person = {
+//   name: "vishal",
+//   lastname: "anand",
+//   age: 23,
+//   city: "kanpur",
+//   state: "Up"
+// };
 
-// we can use these propety by useing these two method
-// Dot Notation
+// console.log(person);
 
-person.name = "Minhaj ahmad khan ";
-console.log(person);
+// // we can` use these propety by useing these two method
+// // Dot Notation
 
-// Bracket Notation
+// person.name = "Minhaj ahmad khan ";
+// console.log(person);
 
-person["name"] = "urooj";
-console.log(person);
+// // Bracket Notation
+
+// person["name"] = "urooj";
+// console.log(person);
+
+//
