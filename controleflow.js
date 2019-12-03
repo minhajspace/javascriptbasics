@@ -56,6 +56,17 @@ let i = 20;
 
 //              for of loop
 
-let Minhaj = ["minhaj ahmad khan ", 23, " Lucknow", " Aktu ", " Cricket"];
+// let Minhaj = ["minhaj ahmad khan ", 23, " Lucknow", " Aktu ", " Cricket"];
 
-for (let value of Minhaj) console.log(value);
+// for (let value of Minhaj) console.log(value);
+// Break key world
+// // for (let i = 0; i <= 20; i++) {
+// //   if (i === 10) break;
+// //   console.log(i);
+// }
+//       continue
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 == 0) continue;
+//   console.log(i);
+// }
