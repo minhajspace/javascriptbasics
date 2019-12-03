@@ -90,14 +90,25 @@ let y = 3;
 
 // Logical and  (&&)
 
-let heightincome = true;
-let creditincome = true;
+// let heightincome = true;
+// let creditincome = true;
 
-isApproved = heightincome && creditincome;
-console.log(isApproved);
+// isApproved = heightincome && creditincome;
+// console.log(isApproved);
 
-heightincome = false;
-creditincome = false;
+// heightincome = false;
+// creditincome = false;
 
-isApproved = heightincome || creditincome;
-console.log(isApproved);
+// isApproved = heightincome || creditincome;
+// console.log(isApproved);
+
+//              bitWise
+
+// let a = "red";
+// let b = "blue ";
+// let c = null;
+
+// c = a;
+// a = b;
+// b = c;
+// console.log(a, b);
