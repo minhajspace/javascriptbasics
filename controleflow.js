@@ -38,8 +38,18 @@
 // }
 //                                 while loop
 
-let i = 2;
-while (i <= 20) {
-  if (i % 2 === 0) console.log(i);
-  i++;
-}
+let i = 20;
+// while (i <= 20) {
+//   if (i % 2 === 0) console.log(i);
+//   i++;
+// }
+
+// do {
+//   if (i % 2 === 0) console.log(i);
+//   i++;
+// } while (i >= 20);
+//   do while loops
+do {
+  if (i % 2 === 1) console.log(i);
+  i--;
+} while (i < 20);
