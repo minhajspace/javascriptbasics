@@ -33,6 +33,13 @@
 //   console.log("hello world");
 // }
 
-for (let i = 4; i <= 40; i++) {
-  if (i % 4 === 0) console.log(i);
+// for (let i = 4; i <= 40; i++) {
+//   if (i % 4 === 0) console.log(i);
+// }
+//                                 while loop
+
+let i = 2;
+while (i <= 20) {
+  if (i % 2 === 0) console.log(i);
+  i++;
 }
