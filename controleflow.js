@@ -49,7 +49,13 @@ let i = 20;
 //   i++;
 // } while (i >= 20);
 //   do while loops
-do {
-  if (i % 2 === 1) console.log(i);
-  i--;
-} while (i < 20);
+// do {
+//   if (i % 2 === 1) console.log(i);
+//   i--;
+// } while (i < 20);
+
+//              for of loop
+
+let Minhaj = ["minhaj ahmad khan ", 23, " Lucknow", " Aktu ", " Cricket"];
+
+for (let value of Minhaj) console.log(value);
