@@ -48,3 +48,12 @@ function ConstructorFunction(radius, x, y) {
 
 const circel = new ConstructorFunction(1, 4, 5);
 console.log(circel);
+
+// Dynamic Nature of Objects
+
+const circel1 = new ConstructorFunction(1, 3, 5);
+console.log(circel1);
+
+circel1.gretting = function() {
+  console.log("hello everyone");
+};
