@@ -104,12 +104,14 @@ const Circel = {
 //   Circel
 // );
 
-const newObject = {
-  color: "red",
-  greeting() {
-    console.log("good night");
-  },
+// const newObject = {
+//   color: "red",
+//   greeting() {
+//     console.log("good night");
+//   },
 
-  ...Circel
-};
-console.log(newObject);
+//   ...Circel
+// };
+// console.log(newObject);
+
+// excersice
