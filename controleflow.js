@@ -70,3 +70,12 @@ let i = 20;
 //   if (i % 2 == 0) continue;
 //   console.log(i);
 // }
+
+function fizzbuzz(input) {
+  if (input % 3 === 0 && input % 5 == 0) console.log("fizzbuzz");
+  if (input !== "string") console.log("not a number ");
+  if (input % 3 === 0) console.log("fizz");
+  if (input % 5 === 0) console.log("buzz");
+}
+
+fizzbuzz("string");
