@@ -34,26 +34,61 @@
 // console.log(circel2);
 //                            Constructor function
 
-function ConstructorFunction(radius, x, y) {
-  this.radius = radius;
-  (this.location = {
-    x: x,
-    y: y
-  }),
-    (this.isApproved = true);
-  this.draw = function() {
-    console.log("draw");
-  };
-}
+// function ConstructorFunction(radius, x, y) {
+//   this.radius = radius;
+//   (this.location = {
+//     x: x,
+//     y: y
+//   }),
+//     (this.isApproved = true);
+//   this.draw = function() {
+//     console.log("draw");
+//   };
+// }
 
-const circel = new ConstructorFunction(1, 4, 5);
-console.log(circel);
+// const circel = new ConstructorFunction(1, 4, 5);
 
-// Dynamic Nature of Objects
+// const circel2 = circel(1, 2, 3);
 
-const circel1 = new ConstructorFunction(1, 3, 5);
-console.log(circel1);
+// // Dynamic Nature of Objects
 
-circel1.gretting = function() {
-  console.log("hello everyone");
+// const circel1 = new ConstructorFunction(1, 3, 5);
+// console.log(circel1);
+
+// circel1.gretting = function() {
+//   console.log("hello everyone");
+// };
+
+// function newObject(radius) {
+//   return {
+//     radius
+//   };
+// }
+
+// const newObject1 = newObject(2);
+// console.log(newObject1);
+// newObject1.newradius = 2;
+// newObject1.greeting = function() {
+//   console.log("good evening ");
+// };
+// delete newObject1.newradius;
+// console.log(newObject1);
+
+// function Circel(radius) {
+//   this.radius = radius;
+//   this.draw = function() {
+//     console.log("draw");
+//   };
+// }
+
+const Circel = {
+  radius: "radius",
+  greeting() {
+    console.log("good evening ");
+  }
 };
+
+// for (let key in Circel) console.log(key, Circel[key]);
+for (let key of Object.keys(Circel)) console.log(key);
+for (let key of Object.entries(Circel)) console.log(key);
+if ("radius" in Circel) console.log("yes");
