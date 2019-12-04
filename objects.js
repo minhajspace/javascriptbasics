@@ -89,6 +89,27 @@ const Circel = {
 };
 
 // for (let key in Circel) console.log(key, Circel[key]);
-for (let key of Object.keys(Circel)) console.log(key);
-for (let key of Object.entries(Circel)) console.log(key);
-if ("radius" in Circel) console.log("yes");
+// for (let key of Object.keys(Circel)) console.log(key);
+// for (let key of Object.entries(Circel)) console.log(key);
+// if ("radius" in Circel) console.log("yes");
+
+// cloaning Object
+
+// using Object.assgn method
+
+// const newObject = Object.assign(
+//   {
+//     color: "red"
+//   },
+//   Circel
+// );
+
+const newObject = {
+  color: "red",
+  greeting() {
+    console.log("good night");
+  },
+
+  ...Circel
+};
+console.log(newObject);
