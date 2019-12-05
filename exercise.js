@@ -77,18 +77,38 @@
 // increased(number);
 // console.log(number);
 //         enumerating
+// const circel = {
+//   radius: 1,
+//   draw: function() {
+//     console.log("draw");
+//   }
+// };
+
+// for (let key in circel) console.log(key);
+
+// for (let key of Object.keys(circel)) console.log(key);
+
+// for (let entey of Object.entries(circel)) console.log(entey);
+
+// "radius" in circel;
+// console.log("yes");
+
+// Cloning an object
+// Old method
+
 const circel = {
   radius: 1,
-  draw: function() {
+  draw() {
     console.log("draw");
   }
 };
+// const another = {};
+// for (let key in circel) another[key] = circel[key];
+// console.log(another);
 
-for (let key in circel) console.log(key);
-
-for (let key of Object.keys(circel)) console.log(key);
-
-for (let entey of Object.entries(circel)) console.log(entey);
-
-"radius" in circel;
-console.log("yes");
+// using Object.assign
+// const another = Object.assign({}, circel);
+// console.log(another);
+// using spread operator
+const another = { ...circel };
+console.log(another);
