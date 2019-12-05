@@ -65,14 +65,30 @@
 
 // how primitive and Refrence type behave differently
 
-let x1 = { value: 10 };
-let y1 = x1;
-x1.value = 20;
+// let x1 = { value: 10 };
+// let y1 = x1;
+// x1.value = 20;
 
-let number = 10;
+// let number = 10;
 
-function increased(number) {
-  number++;
-}
-increased(number);
-console.log(number);
+// function increased(number) {
+//   number++;
+// }
+// increased(number);
+// console.log(number);
+//         enumerating
+const circel = {
+  radius: 1,
+  draw: function() {
+    console.log("draw");
+  }
+};
+
+for (let key in circel) console.log(key);
+
+for (let key of Object.keys(circel)) console.log(key);
+
+for (let entey of Object.entries(circel)) console.log(entey);
+
+"radius" in circel;
+console.log("yes");
