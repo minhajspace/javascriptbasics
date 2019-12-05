@@ -18,11 +18,35 @@
 //   };
 // }
 
-function ConstFucntion(street, city, zipcode) {
-  this.street = street;
-  this.city = city;
-  this.zipcode = zipcode;
+// function ConstFucntion(street, city, zipcode) {
+//   this.street = street;
+//   this.city = city;
+//   this.zipcode = zipcode;
+// }
+
+// const newfunction = new ConstFucntion("newHaiderganj", " city", "226003");
+
+//  Constructor Properties
+
+// factory function
+
+function createObject(radius) {
+  return {
+    radius,
+    draw: function() {
+      console.log("draw");
+    }
+  };
+}
+const newfunction = createObject(1);
+console.log(newfunction);
+// constructor function
+function ObjectCreate(radius) {
+  this.radius = radius;
+  this.draw = function() {
+    console.log("draw");
+  };
 }
 
-const newfunction = new ConstFucntion("newHaiderganj", " city", "226003");
-console.log(newfunction);
+const another = new ObjectCreate(1);
+console.log(another);
