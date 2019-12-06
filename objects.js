@@ -206,17 +206,17 @@
 
 //Primitive type
 
-let message = " hello ";
+// let message = " hello ";
 
-console.log(message);
+// console.log(message);
 
-//Object type string
+// //Object type string
 
-let another = new String("h1");
-console.log(another);
+// let another = new String("h1");
+// console.log(another);
 
 //   String Built in Method
-//message = "   hi hello  how are you  ?    ";
+// message = "   hi hello  how are you  ?    ";
 // console.log(message.length);
 // console.log(message[0]);
 // console.log(message[2]);
@@ -231,3 +231,5 @@ console.log(another);
 // console.log(message.trimRight());
 
 // console.log(message.replace("hello", "everyone"));
+
+//     template Literals
