@@ -65,3 +65,25 @@ const result = newnumber.find(result => {
   return result > 5;
 });
 console.log(result);
+
+//                    Removing element from array
+//  method remove element form the end of the array
+// .pop()
+
+let remove = newnumber.pop();
+console.log(remove);
+console.log(newnumber);
+
+//  now removing element from the bigning for the
+// .shift()
+
+remove = newnumber.shift();
+console.log(remove);
+console.log(newnumber);
+
+// now removing element from the middel of the array
+// .splice () ;
+
+remove = newnumber.splice(1, 2);
+console.log(remove);
+console.log(newnumber);
