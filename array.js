@@ -59,31 +59,49 @@
 
 //                       arrow function
 
-const newnumber = [1, 5, 6, 8, 12];
+// const newnumber = [1, 5, 6, 8, 12];
 
-const result = newnumber.find(result => {
-  return result > 5;
-});
-console.log(result);
+// const result = newnumber.find(result => {
+//   return result > 5;
+// });
+// console.log(result);
 
-//                    Removing element from array
-//  method remove element form the end of the array
-// .pop()
+// //                    Removing element from array
+// //  method remove element form the end of the array
+// // .pop()
 
-let remove = newnumber.pop();
-console.log(remove);
-console.log(newnumber);
+// let remove = newnumber.pop();
+// console.log(remove);
+// console.log(newnumber);
 
-//  now removing element from the bigning for the
-// .shift()
+// //  now removing element from the bigning for the
+// // .shift()
 
-remove = newnumber.shift();
-console.log(remove);
-console.log(newnumber);
+// remove = newnumber.shift();
+// console.log(remove);
+// console.log(newnumber);
 
-// now removing element from the middel of the array
-// .splice () ;
+// // now removing element from the middel of the array
+// // .splice () ;
 
-remove = newnumber.splice(1, 2);
-console.log(remove);
-console.log(newnumber);
+// remove = newnumber.splice(1, 2);
+// console.log(remove);
+// console.log(newnumber);
+
+//             Empting An  Array
+// solution 1
+// Empting array using .length
+
+let newArray = [1, 2, 3, 8, 5, 64, 23, 5, 4, 62];
+// newArray.length = 0;
+// console.log(newArray);
+
+// solution 2
+// newArray = [];
+// console.log(newArray);
+
+// solution 3
+// .splice()
+
+newArray.splice(0, newArray.length);
+console.log(newArray);
