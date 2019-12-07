@@ -115,5 +115,9 @@ let newArray = [1, 2, 3, 8, 5, 64, 23, 5, 4, 62];
 const arrayOne = [1, 2, 3, 4];
 const arrayTwo = [5, 6, 7, 8];
 
-const combined = arrayOne.concat(arrayTwo);
+let combined = arrayOne.concat(arrayTwo);
+
+// combined array using spread operator
+
+combined = [...arrayOne, ...arrayTwo];
 console.log(combined);
