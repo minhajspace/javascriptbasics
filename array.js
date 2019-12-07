@@ -134,6 +134,12 @@ let newArray = [1, 2, 3, 8, 5, 64, 23, 5, 4, 62];
 // iterating array using for in loop
 
 const copyArray = [1, 2, 3, 4, 5, 6];
-for (let element of copyArray) {
+// for (let element of copyArray) {
+//   console.log(element);
+// }
+
+// using ForEach
+
+copyArray.forEach(element => {
   console.log(element);
-}
+});
