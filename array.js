@@ -112,21 +112,28 @@ let newArray = [1, 2, 3, 8, 5, 64, 23, 5, 4, 62];
 //   combined array
 //   .concat()
 
-const arrayOne = [1, 2, 3, 4];
-const arrayTwo = [5, 6, 7, 8];
+// const arrayOne = [1, 2, 3, 4];
+// const arrayTwo = [5, 6, 7, 8];
 
-let combined = arrayOne.concat(arrayTwo);
+// let combined = arrayOne.concat(arrayTwo);
 
-// combined array using spread operator
+// // combined array using spread operator
 
-combined = [...arrayOne, ...arrayTwo];
-console.log(combined);
+// combined = [...arrayOne, ...arrayTwo];
+// console.log(combined);
 
-// copy array using sperade operator
-const copy = [...combined];
-console.log(copy);
+// // copy array using sperade operator
+//const copy = [...combined];
+// console.log(copy);
 
-// slicing Array using .slice()
+// // slicing Array using .slice()
 
-const slice = copy.splice(2, 5);
-console.log(slice);
+// const slice = copy.splice(2, 5);
+// console.log(slice);
+//                iterating  An Array
+// iterating array using for in loop
+
+const copyArray = [1, 2, 3, 4, 5, 6];
+for (let element of copyArray) {
+  console.log(element);
+}
