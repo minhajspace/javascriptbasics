@@ -121,3 +121,7 @@ let combined = arrayOne.concat(arrayTwo);
 
 combined = [...arrayOne, ...arrayTwo];
 console.log(combined);
+
+// copy array using sperade operator
+const copy = [...combined];
+console.log(copy);
