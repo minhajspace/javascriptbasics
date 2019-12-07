@@ -140,6 +140,4 @@ const copyArray = [1, 2, 3, 4, 5, 6];
 
 // using ForEach
 
-copyArray.forEach(element => {
-  console.log(element);
-});
+copyArray.forEach(element => console.log(element));
