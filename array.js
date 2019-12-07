@@ -103,5 +103,17 @@ let newArray = [1, 2, 3, 8, 5, 64, 23, 5, 4, 62];
 // solution 3
 // .splice()
 
-newArray.splice(0, newArray.length);
-console.log(newArray);
+// newArray.splice(0, newArray.length);
+// console.log(newArray);
+// console.log(newArray);
+// while(newArray.length >0 )
+// console.log(newArray);
+
+//   combined array
+//   .concat()
+
+const arrayOne = [1, 2, 3, 4];
+const arrayTwo = [5, 6, 7, 8];
+
+const combined = arrayOne.concat(arrayTwo);
+console.log(combined);
