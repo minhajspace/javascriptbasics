@@ -125,3 +125,8 @@ console.log(combined);
 // copy array using sperade operator
 const copy = [...combined];
 console.log(copy);
+
+// slicing Array using .slice()
+
+const slice = copy.splice(2, 5);
+console.log(slice);
