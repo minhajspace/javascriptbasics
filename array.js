@@ -140,4 +140,9 @@ const copyArray = [1, 2, 3, 4, 5, 6];
 
 // using ForEach
 
-copyArray.forEach((element, index) => console.log(index, element));
+//copyArray.forEach((element, index) => console.log(index, element));
+
+// joining Array
+// join method return a string
+const join = copyArray.join();
+console.log(join);
