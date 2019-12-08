@@ -144,5 +144,12 @@ const copyArray = [1, 2, 3, 4, 5, 6];
 
 // joining Array
 // join method return a string
-const join = copyArray.join();
+let join = copyArray.join();
+
+const message = "this is my first message";
+
+const split = message.split(" ");
+console.log(split);
+
+join = split.join("-");
 console.log(join);
