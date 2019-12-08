@@ -174,5 +174,5 @@ console.log(unsortedArray);
 const sorted = unsortedArray.sort();
 console.log(sorted);
 
-// const reversed = sorted.reverse();
-// console.log(reversed);
+const reversed = sorted.reverse();
+console.log(reversed);
