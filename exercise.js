@@ -37,10 +37,10 @@ function arrayfrom(min, max) {
 
 // // Search Element
 
-// function searchArray(Array, SearchElement) {
-//   for (let Element of Array) if (Element === SearchElement) return true;
-//   return false;
-// }
+function searchArray(Array, SearchElement) {
+  for (let Element of Array) if (Element === SearchElement) return true;
+  return false;
+}
 
-// const newa = searchArray(result, 6);
-// console.log(newa);
+const newa = searchArray(result, 6);
+console.log(newa);
