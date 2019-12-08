@@ -240,13 +240,21 @@ console.log(numberGreaterThenTen);
 
 // Mapping
 
-number = [2, 4, 6, 8];
-let result = number
-  .filter(element => element >= 2)
-  .map(element => "<li>" + element + "</li>")
-  .map(element => {
-    return "<ul>" + element + "</ul>";
-  })
-  .join("");
+// number = [2, 4, 6, 8];
+// let result = number
+//   .filter(element => element >= 2)
+//   .map(element => "<li>" + element + "</li>")
+//   .map(element => {
+//     return "<ul>" + element + "</ul>";
+//   })
+//   .join("");
 
-console.log(result);
+// console.log(result);
+
+//
+
+let objectElement = [1, 2, 3, 5, 4, 8, 96, 12, 36];
+const mapping = objectElement
+  .filter(element => element => 5)
+  .map(element => ({ value: element }));
+console.log(mapping);
