@@ -27,7 +27,7 @@
 // Array exercise
 
 const result = arrayfrom(2, 6);
-console.log(result);
+//console.log(result);
 
 function arrayfrom(min, max) {
   const buffer = [];
@@ -36,11 +36,24 @@ function arrayfrom(min, max) {
 }
 
 // // Search Element
+let arrayfind = [2, 4, 5, 8, 2, 1, 3, 6, 23, 4];
 
-function searchArray(Array, SearchElement) {
-  for (let Element of Array) if (Element === SearchElement) return true;
+function arraySearch(array, searchElement) {
+  for (let Element of array) if (Element === searchElement) return true;
   return false;
 }
 
-const newa = searchArray(result, 6);
-console.log(newa);
+const result1 = arraySearch(arrayfind, 10);
+//console.log(result1);
+
+// copy array
+
+function newArray(array, remove) {
+  newArray = [];
+  for (let element of array)
+    if (!remove.includes(element)) newArray.push(element);
+  return newArray;
+}
+
+const arrayone = newArray(arrayfind, [2, 4]);
+console.log(arrayone);
