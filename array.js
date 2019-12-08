@@ -179,18 +179,29 @@ let unsortedArray = [4, 5, 6, 2, 8, 1, 9, 7];
 
 // Sorting Refrence Type Array
 
-const courseUnsorted = [
-  { id: 1, Name: "Minhaj ahmad khan " },
-  { id: 2, Name: "Urooj Ahmad khan" },
-  { id: 3, Name: "Shad Mirza" },
-  { id: 4, Name: "Aditiya kapoor" }
-];
+// const courseUnsorted = [
+//   { id: 1, Name: "Minhaj ahmad khan " },
+//   { id: 2, Name: "Urooj Ahmad khan" },
+//   { id: 3, Name: "Shad Mirza" },
+//   { id: 4, Name: "Aditiya kapoor" }
+// ];
 
-const courseSorted = courseUnsorted.sort((a, b) => {
-  const inputA = a.Name.toLocaleUpperCase();
-  const inputB = b.Name.toLocaleUpperCase();
-  if (inputA > inputB) return 1;
-  if (inputA < inputB) return -1;
-  return 0;
+// const courseSorted = courseUnsorted.sort((a, b) => {
+//   const inputA = a.Name.toLocaleUpperCase();
+//   const inputB = b.Name.toLocaleUpperCase();
+//   if (inputA > inputB) return 1;
+//   if (inputA < inputB) return -1;
+//   return 0;
+// });
+// console.log(courseSorted);
+//
+
+// Testing the elements an of array
+
+//  .every()
+// westing alli element is greater the 10 of not
+let number = [1, 2, 3, 65, 45, 85, 4, 36, 8, 574, 96, 52];
+let numberGreaterThenTen = number.every((element, index) => {
+  return element >= 10;
 });
-console.log(courseSorted);
+console.log(numberGreaterThenTen);
