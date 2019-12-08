@@ -168,11 +168,29 @@ const copyArray = [1, 2, 3, 4, 5, 6];
 // Shorting Array
 // .sort() ;
 
-const unsortedArray = [4, 5, 6, 2, 8, 1, 9, 7];
-console.log(unsortedArray);
+let unsortedArray = [4, 5, 6, 2, 8, 1, 9, 7];
+// console.log(unsortedArray);
 
-const sorted = unsortedArray.sort();
-console.log(sorted);
+// const sorted = unsortedArray.sort();
+// console.log(sorted);
 
-const reversed = sorted.reverse();
-console.log(reversed);
+// const reversed = sorted.reverse();
+// console.log(reversed);
+
+// Sorting Refrence Type Array
+
+const courseUnsorted = [
+  { id: 1, Name: "Minhaj ahmad khan " },
+  { id: 2, Name: "Urooj Ahmad khan" },
+  { id: 3, Name: "Shad Mirza" },
+  { id: 4, Name: "Aditiya kapoor" }
+];
+
+const courseSorted = courseUnsorted.sort((a, b) => {
+  const inputA = a.Name.toLocaleUpperCase();
+  const inputB = b.Name.toLocaleUpperCase();
+  if (inputA > inputB) return 1;
+  if (inputA < inputB) return -1;
+  return 0;
+});
+console.log(courseSorted);
