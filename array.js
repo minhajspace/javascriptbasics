@@ -144,12 +144,35 @@ const copyArray = [1, 2, 3, 4, 5, 6];
 
 // joining Array
 // join method return a string
-let join = copyArray.join();
+// let join = copyArray.join();
 
-const message = "this is my first message";
+// const message = "this is my first message";
 
-const split = message.split(" ");
-console.log(split);
+// const split = message.split(" ");
+// console.log(split);
 
-join = split.join("-");
-console.log(join);
+// join = split.join("-");
+// console.log(join);
+
+//or (let element of copyArray) console.log(element);
+
+// copyArray.forEach(function(ArrayElement, index) {
+//   console.log(index, ArrayElement);
+// });
+
+// let message = "hello this is my first Programing language";
+
+// let newarray = message.split(" ");
+// console.log(newarray);
+
+// Shorting Array
+// .sort() ;
+
+const unsortedArray = [4, 5, 6, 2, 8, 1, 9, 7];
+console.log(unsortedArray);
+
+// const sorted = unsortedArray.sort();
+// console.log(sorted);
+
+// const reversed = sorted.reverse();
+// console.log(reversed);
