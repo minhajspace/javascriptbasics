@@ -206,8 +206,14 @@ let numberGreaterThenTen = number.every(elements => {
 });
 console.log(numberGreaterThenTen);
 
-let allPositive = number.some(elements => {
-  return elements >= 10;
-});
+// let allPositive = number.some(elements => {
+//   return elements >= 10;
+// });
 
-console.log(allPositive);
+// console.log(allPositive);
+// using arrow
+
+const atleastOnePositive = number.some(number => {
+  return number >= 0;
+});
+console.log(atleastOnePositive);
