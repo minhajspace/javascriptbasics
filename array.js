@@ -213,7 +213,27 @@ console.log(numberGreaterThenTen);
 // console.log(allPositive);
 // using arrow
 
-const atleastOnePositive = number.some(number => {
-  return number >= 0;
-});
-console.log(atleastOnePositive);
+// const atleastOnePositive = number.some(number => {
+//   return number >= 0;
+// });
+// console.log(atleastOnePositive);
+
+// filtering array
+
+//.filter()
+
+number = [2, 4, 5, 6, 8, 42, 6, 84, 6, 3];
+
+number = [20, 25, 36, 41, 25];
+const filter1 = number.filter(element => element >= 10);
+console.log(filter1);
+
+let name = [
+  "Minhaj ahmad khan",
+  "mirza",
+  "Urooj Ahmad",
+  "Vishal anand",
+  "shad mirza"
+];
+const filtrName = name.filter(element => element.length <= 10);
+console.log(filtrName);
