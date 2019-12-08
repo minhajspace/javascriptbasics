@@ -171,8 +171,8 @@ const copyArray = [1, 2, 3, 4, 5, 6];
 const unsortedArray = [4, 5, 6, 2, 8, 1, 9, 7];
 console.log(unsortedArray);
 
-// const sorted = unsortedArray.sort();
-// console.log(sorted);
+const sorted = unsortedArray.sort();
+console.log(sorted);
 
 // const reversed = sorted.reverse();
 // console.log(reversed);
