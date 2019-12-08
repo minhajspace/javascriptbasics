@@ -71,11 +71,11 @@ let i = 20;
 //   console.log(i);
 // }
 
-function fizzbuzz(input) {
-  if (input % 3 === 0 && input % 5 == 0) console.log("fizzbuzz");
-  if (input !== "string") console.log("not a number ");
-  if (input % 3 === 0) console.log("fizz");
-  if (input % 5 === 0) console.log("buzz");
-}
+// function fizzbuzz(input) {
+//   if (input % 3 === 0 && input % 5 == 0) console.log("fizzbuzz");
+//   if (input !== "string") console.log("not a number ");
+//   if (input % 3 === 0) console.log("fizz");
+//   if (input % 5 === 0) console.log("buzz");
+// }
 
-fizzbuzz("string");
+// fizzbuzz("string");

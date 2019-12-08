@@ -23,3 +23,24 @@
 //   this.city = city;
 //   this.zipcode = zipcode;
 // }
+
+// Array exercise
+
+const result = arrayfrom(2, 6);
+console.log(result);
+
+function arrayfrom(min, max) {
+  const buffer = [];
+  for (i = min; max >= i; i++) buffer.push(i);
+  return buffer;
+}
+
+// // Search Element
+
+// function searchArray(Array, SearchElement) {
+//   for (let Element of Array) if (Element === SearchElement) return true;
+//   return false;
+// }
+
+// const newa = searchArray(result, 6);
+// console.log(newa);
