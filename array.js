@@ -222,18 +222,31 @@ console.log(numberGreaterThenTen);
 
 //.filter()
 
-number = [2, 4, 5, 6, 8, 42, 6, 84, 6, 3];
+// number = [2, 4, 5, 6, 8, 42, 6, 84, 6, 3];
 
-number = [20, 25, 36, 41, 25];
-const filter1 = number.filter(element => element >= 10);
-console.log(filter1);
+// number = [20, 25, 36, 41, 25];
+// const filter1 = number.filter(element => element >= 10);
+// console.log(filter1);
 
-let name = [
-  "Minhaj ahmad khan",
-  "mirza",
-  "Urooj Ahmad",
-  "Vishal anand",
-  "shad mirza"
-];
-const filtrName = name.filter(element => element.length <= 10);
-console.log(filtrName);
+// let name = [
+//   "Minhaj ahmad khan",
+//   "mirza",
+//   "Urooj Ahmad",
+//   "Vishal anand",
+//   "shad mirza"
+// ];
+// // const filtrName = name.filter(element => element.length <= 10);
+// // console.log(filtrName);
+
+// Mapping
+
+number = [2, 4, 6, 8];
+let result = number
+  .filter(element => element >= 2)
+  .map(element => "<li>" + element + "</li>")
+  .map(element => {
+    return "<ul>" + element + "</ul>";
+  })
+  .join("");
+
+console.log(result);
