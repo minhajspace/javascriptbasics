@@ -254,7 +254,20 @@ console.log(numberGreaterThenTen);
 //
 
 let objectElement = [1, 2, 3, 5, 4, 8, 96, 12, 36];
-const mapping = objectElement
-  .filter(element => element => 5)
-  .map(element => ({ value: element }));
-console.log(mapping);
+// const mapping = objectElement
+//   .filter(element => element >= 10)
+//   .map(element => ({ value: element })).sort({
+
+//   })
+// console.log(mapping);
+
+let sum = 0;
+for (let index of objectElement) sum += index;
+console.log(sum);
+
+// achiving same thing using reduce method
+
+sum = objectElement.reduce((memory, currentvalue) => {
+  return memory + currentvalue;
+}, 0);
+console.log(sum);
