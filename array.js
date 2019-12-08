@@ -201,7 +201,13 @@ let unsortedArray = [4, 5, 6, 2, 8, 1, 9, 7];
 //  .every()
 // westing alli element is greater the 10 of not
 let number = [1, 2, 3, 65, 45, 85, 4, 36, 8, 574, 96, 52];
-let numberGreaterThenTen = number.every((element, index) => {
-  return element >= 10;
+let numberGreaterThenTen = number.every(elements => {
+  return elements >= 10;
 });
 console.log(numberGreaterThenTen);
+
+let allPositive = number.some(elements => {
+  return elements >= 10;
+});
+
+console.log(allPositive);
