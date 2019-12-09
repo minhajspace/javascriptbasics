@@ -69,9 +69,8 @@
 
 //    Rest operator
 
-function sum(distun, ...argument) {
-  let sum = argument.reduce((a, b) => a + b);
-  return sum;
-}
+let sum = (...argument) => {
+  return argument.reduce((a, b) => a + b);
+};
 
 console.log(sum(5, 20, 40, 40));
