@@ -89,7 +89,15 @@
 // console.log(intrestRate(1000));
 
 // Now After ES6
-function intrestRate(Principal, rate = 3.5, years = 5) {
+// function intrestRate(Principal, rate = 3.5, years = 5) {
+//   return ((Principal * rate) / 100) * years;
+// }
+// console.log(intrestRate(10000));
+
+// using Function Expression and Arrow function
+
+const intrestRate = (Principal, rate = 3.5, years = 5) => {
   return ((Principal * rate) / 100) * years;
-}
-console.log(intrestRate(10000));
+};
+
+console.log(intrestRate(10000, 5, 5));
