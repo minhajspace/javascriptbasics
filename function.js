@@ -69,8 +69,21 @@
 
 //    Rest operator
 
-let sum = (...argument) => {
-  return argument.reduce((a, b) => a + b);
-};
+// let sum = (...argument) => {
+//   return argument.reduce((a, b) => a + b);
+// };
 
-console.log(sum(5, 20, 40, 40));
+// console.log(sum(5, 20, 40, 40));
+
+//  Default Parameters
+
+// Before Es6  we are using || logical operator let me show you how
+
+// imagine we are writing a function to calculate intrest rate
+
+function intrestRate(principal, rate, years) {
+  rate = rate || 3.5;
+  years = years || 5;
+  return ((principal * rate) / 100) * years;
+}
+console.log(intrestRate(1000));
