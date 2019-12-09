@@ -96,8 +96,10 @@
 
 // using Function Expression and Arrow function
 
-const intrestRate = (Principal, rate = 3.5, years = 5) => {
+const intrestRate = (Principal, rate = 3.5, years) => {
   return ((Principal * rate) / 100) * years;
 };
 
-console.log(intrestRate(10000, 5, 5));
+console.log(intrestRate(10000, 5));
+
+// condition  setting default parameters afther all parameters should have default parameters
