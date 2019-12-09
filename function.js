@@ -81,9 +81,15 @@
 
 // imagine we are writing a function to calculate intrest rate
 
-function intrestRate(principal, rate, years) {
-  rate = rate || 3.5;
-  years = years || 5;
-  return ((principal * rate) / 100) * years;
+// function intrestRate(principal, rate, years) {
+//   rate = rate || 3.5;
+//   years = years || 5;
+//   return ((principal * rate) / 100) * years;
+// }
+// console.log(intrestRate(1000));
+
+// Now After ES6
+function intrestRate(Principal, rate = 3.5, years = 5) {
+  return ((Principal * rate) / 100) * years;
 }
-console.log(intrestRate(1000));
+console.log(intrestRate(10000));
