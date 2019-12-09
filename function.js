@@ -5,9 +5,32 @@
 
 // function Declaration
 
+// We can call a Fucntion that is Defined using the Function declaration +
+// Before its Defined  .
+// BUT WHY IS THAT
+
+//  The reason for this is because when our JavaScript engine executes +
+//  this code, it moves all the function declarations to the  +
+//  top, so our code will look like this at run time.  +
+
+// SO OUR CODE WILL LOOK LIKE THIS AT RUN TIME
+
+// walk();
+// function walk() {
+//     console.log("walk");
+// }
+
+// walk();
+
+// What is Hoisting ?
+
+// hoisting the process to to moving function Decelaration to the top of the file +
+// and this is done automatically by the javascript engine that is executing this code
+
 //  In contrast we dont put semicolon in the end of the function it really doesnt matter by but convention we never do that
 
 walk();
+
 function walk() {
   console.log("walk");
 }
