@@ -169,6 +169,9 @@
 // start();
 
 // we have the same concept in our loop
+
+// here i has also only block scope
+
 function hello() {
   console.log("hello");
   for (let i = 0; i < 10; i++) {
