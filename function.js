@@ -96,10 +96,21 @@
 
 // using Function Expression and Arrow function
 
-const intrestRate = (Principal, rate = 3.5, years) => {
-  return ((Principal * rate) / 100) * years;
-};
+// const intrestRate = (Principal, rate = 3.5, years) => {
+//   return ((Principal * rate) / 100) * years;
+// };
 
-console.log(intrestRate(10000, 5));
+// console.log(intrestRate(10000, 5));
 
 // condition  setting default parameters afther all parameters should have default parameters
+
+// Getters and Setters
+
+let person = {
+  firstName: "Minhaj ",
+  lastName: "Ahmad khan",
+  fullName() {
+    return `${person.firstName} ${person.lastName}`;
+  }
+};
+console.log(person.fullName());
