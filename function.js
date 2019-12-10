@@ -120,24 +120,34 @@
 // Now using getter
 //  we use getter to access properties of the object
 // we use setter to change  or mutate the current object
-let person = {
-  firstName: "Minhaj",
-  middelName: "Ahmad",
-  lastName: "khan",
-  get fullName() {
-    return `${person.firstName} ${person.middelName} ${person.lastName}`;
-  },
-  set fullName(value) {
-    if (typeof value !== "string") throw new Error("value is not a string ");
-    const parts = value.split(" ");
-    this.firstName = parts[0];
-    this.middelName = parts[1];
-    this.lastName = parts[2];
-  }
-};
-try {
-  person.fullName = null;
-} catch (e) {
-  alert(e);
+// let person = {
+//   firstName: "Minhaj",
+//   middelName: "Ahmad",
+//   lastName: "khan",
+//   get fullName() {
+//     return `${person.firstName} ${person.middelName} ${person.lastName}`;
+//   },
+//   set fullName(value) {
+//     if (typeof value !== "string") throw new Error("value is not a string ");
+//     const parts = value.split(" ");
+//     if (parts.length !== 3)
+//       throw new Error("First Name Middel Name and Last Name ");
+//     this.firstName = parts[0];
+//     this.middelName = parts[1];
+//     this.lastName = parts[2];
+//   }
+// };
+// try {
+//   person.fullName = "Minhaj";
+// } catch (e) {
+//   alert(e);
+// }
+// console.log(person.fullName);
+//                         Local and Global score
+
+// Block score  we can use this variable with in the box only ;
+
+{
+  const name = "minhaj ahmad khan ";
+  console.log(name);
 }
-console.log(person.fullName);
