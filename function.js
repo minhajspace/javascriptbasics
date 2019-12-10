@@ -106,11 +106,26 @@
 
 // Getters and Setters
 
+// Before ES6
+
+// let person = {
+//   firstName: "Minhaj ",
+//   lastName: "Ahmad khan",
+//   fullName() {
+//     return `${person.firstName} ${person.lastName}`;
+//   }
+// };
+// console.log(person.fullName());
+
+// Now using getter
+//  we use getter to access properties of the object
 let person = {
-  firstName: "Minhaj ",
-  lastName: "Ahmad khan",
-  fullName() {
-    return `${person.firstName} ${person.lastName}`;
+  firstName: "Minhaj",
+  middelName: "Ahmad",
+  lastName: "khan",
+  get fullName() {
+    return `${person.firstName} ${person.middelName} ${person.lastName}`;
   }
 };
-console.log(person.fullName());
+
+console.log(person.fullName);
