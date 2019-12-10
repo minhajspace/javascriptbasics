@@ -128,11 +128,16 @@ let person = {
     return `${person.firstName} ${person.middelName} ${person.lastName}`;
   },
   set fullName(value) {
+    if (typeof value !== "string") throw new Error("value is not a string ");
     const parts = value.split(" ");
     this.firstName = parts[0];
     this.middelName = parts[1];
     this.lastName = parts[2];
   }
 };
-person.fullName = "Urooj Ahmad khan";
+try {
+  person.fullName = null;
+} catch (e) {
+  alert(e);
+}
 console.log(person.fullName);
