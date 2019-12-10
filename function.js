@@ -153,4 +153,6 @@
 }
 
 const name = "Urooj ahmad ";
-console.log(name);
+console.log(name); // here name are two different  dariable with different scope
+// fist name has block variable .
+// second name has global scope .
