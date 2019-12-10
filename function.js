@@ -147,23 +147,29 @@
 
 // Block score  we can use this variable with in the box only ;
 
-{
-  const name = "minhaj ahmad khan ";
-  console.log(name);
-}
+// {
+//   const name = "minhaj ahmad khan ";
+//   console.log(name);
+// }
 
-const name = "Urooj ahmad ";
+// const name = "Urooj ahmad ";
 // here name are two different  dariable with different scope
 // fist name has block variable .
 // second name has global scope .
 
 // example
 
-function start() {
-  const run = "hi";
-  if (true) {
-    const another = "bye";
-  }
-  console.log(another);
+// function start() {
+//   const run = "hi";
+//   if (true) {
+//     const another = "bye";
+//     console.log(another);
+//   }
+// }
+// start();
+
+// we have the same concept in our loop
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 1) console.log(i);
 }
-start();
