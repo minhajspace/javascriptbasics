@@ -119,13 +119,20 @@
 
 // Now using getter
 //  we use getter to access properties of the object
+// we use setter to change  or mutate the current object
 let person = {
   firstName: "Minhaj",
   middelName: "Ahmad",
   lastName: "khan",
   get fullName() {
     return `${person.firstName} ${person.middelName} ${person.lastName}`;
+  },
+  set fullName(value) {
+    const parts = value.split(" ");
+    this.firstName = parts[0];
+    this.middelName = parts[1];
+    this.lastName = parts[2];
   }
 };
-
+person.fullName = "Urooj Ahmad khan";
 console.log(person.fullName);
