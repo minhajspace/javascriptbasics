@@ -172,12 +172,24 @@
 
 // here i has also only block scope
 
-function hello() {
-  console.log("hello");
-  for (let i = 0; i < 10; i++) {
-    if (i % 2 == 1) console.log(i);
-  }
-  console.log(i);
+// function hello() {
+//   console.log("hello");
+//   for (let i = 0; i < 10; i++) {
+//     if (i % 2 == 1) console.log(i);
+//   }
+//   console.log(i);
+// }
+
+// hello();
+
+//
+function greeting() {
+  const message = "good morning ";
+  console.log(message);
+}
+function greetingevening() {
+  const message = "good evening ";
+  console.log(message);
 }
 
-hello();
+greetingevening();
