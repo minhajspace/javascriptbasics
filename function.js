@@ -151,3 +151,6 @@
   const name = "minhaj ahmad khan ";
   console.log(name);
 }
+
+const name = "Urooj ahmad ";
+console.log(name);
