@@ -183,7 +183,11 @@
 // hello();
 
 //
+
+const color = "red";
 function greeting() {
+  const color = "green";
+  console.log(color);
   const message = "good morning ";
   console.log(message);
 }
@@ -192,4 +196,6 @@ function greetingevening() {
   console.log(message);
 }
 
-greetingevening();
+greeting();
+
+// local varible over ride to global variable in function block
