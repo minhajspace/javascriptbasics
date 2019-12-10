@@ -153,6 +153,17 @@
 }
 
 const name = "Urooj ahmad ";
-console.log(name); // here name are two different  dariable with different scope
+// here name are two different  dariable with different scope
 // fist name has block variable .
 // second name has global scope .
+
+// example
+
+function start() {
+  const run = "hi";
+  if (true) {
+    const another = "bye";
+  }
+  console.log(another);
+}
+start();
