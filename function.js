@@ -169,7 +169,12 @@
 // start();
 
 // we have the same concept in our loop
-
-for (let i = 0; i < 10; i++) {
-  if (i % 2 == 1) console.log(i);
+function hello() {
+  console.log("hello");
+  for (let i = 0; i < 10; i++) {
+    if (i % 2 == 1) console.log(i);
+  }
+  console.log(i);
 }
+
+hello();
