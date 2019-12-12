@@ -219,3 +219,14 @@ video.stop = function() {
 
 video.stop();
 // here once again this refrence to video because video.stop is method of video object
+
+// that's the example of first rule now we are going to see next rule
+
+function run() {
+  console.log("run buddy");
+  console.log(this);
+}
+
+run();
+
+// this is refrence the window object
