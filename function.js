@@ -211,5 +211,11 @@ const video = {
   }
 };
 video.play();
-
 // because play is a method is video object thats this refrence video object
+
+video.stop = function() {
+  console.log(this);
+};
+
+video.stop();
+// here once again this refrence to video because video.stop is method of video object
