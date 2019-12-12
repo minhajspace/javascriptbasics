@@ -184,18 +184,32 @@
 
 //
 
-const color = "red";
-function greeting() {
-  const color = "green";
-  console.log(color);
-  const message = "good morning ";
-  console.log(message);
-}
-function greetingevening() {
-  const message = "good evening ";
-  console.log(message);
-}
+// const color = "red";
+// function greeting() {
+//   const color = "green";
+//   console.log(color);
+//   const message = "good morning ";
+//   console.log(message);
+// }
+// function greetingevening() {
+//   const message = "good evening ";
+//   console.log(message);
+// }
 
-greeting();
-
+// greeting();
 // local varible over ride to global variable in function block
+
+// this.key word
+
+//  method --> object
+//   function ==> global(window , global )
+
+const video = {
+  title: "a",
+  play() {
+    console.log(this);
+  }
+};
+video.play();
+
+// because play is a method is video object thats this refrence video object
