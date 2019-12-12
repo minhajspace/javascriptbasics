@@ -251,14 +251,18 @@ const video = {
   showTags() {
     this.tags.forEach(function(tag) {
       console.log(this, tag);
-    });
-  },
-  play() {
-    console.log(this);
+    }, this);
   }
+  // play() {
+  //   console.log(this);
+  // }
 };
 video.showTags();
 
 // but what is if we need title on every tags
 // why it undifined  ?
 // Answer because here we are in a for each function thats why its target regulor function
+// this is not the method of video object its just regulor function
+
+// how can we solve this we have few solution for that
+// thisArg
