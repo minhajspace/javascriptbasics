@@ -229,4 +229,12 @@ function run() {
 
 run();
 
-// this is refrence the window object
+function home(input) {
+  this.input = input;
+  console.log(this);
+}
+
+const home2 = new home("hello");
+
+// this key refrence it self because  when we create a function using constructor function to point to this object. so in line 233 we add the property to this new object so let's recap
+//  when  dealing with a regular function ,this by defaut refrences the global object , but if you call  a function  , using the new operator , which in this case for constructor function , this will refrence a new example object
