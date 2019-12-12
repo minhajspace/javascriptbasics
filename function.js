@@ -250,7 +250,7 @@ const video = {
   tags: ["a", "b", "c"],
   showTags() {
     this.tags.forEach(function(tag) {
-      console.log(this.title, tag);
+      console.log(this, tag);
     });
   },
   play() {
@@ -261,3 +261,4 @@ video.showTags();
 
 // but what is if we need title on every tags
 // why it undifined  ?
+// Answer because here we are in a for each function thats why its target regulor function
