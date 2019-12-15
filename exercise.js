@@ -36,12 +36,12 @@ function ConstFucntion(street, city, zipcode) {
 // }
 
 // // // Search Element
-// let arrayfind = [2, 4, 5, 8, 2, 1, 3, 6, 23, 4];
+let arrayfind = [2, 4, 5, 8, 2, 1, 3, 6, 23, 4];
 
-// function arraySearch(array, searchElement) {
-//   for (let Element of array) if (Element === searchElement) return true;
-//   return false;
-// }
+function arraySearch(array, searchElement) {
+  for (let Element of array) if (Element === searchElement) return true;
+  return false;
+}
 
 // const result1 = arraySearch(arrayfind, 10);
 // //console.log(result1);
