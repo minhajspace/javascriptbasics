@@ -10,19 +10,19 @@
 // }
 // showAddress(address);
 
-function factoryfunction(street, city, zipcode) {
-  return {
-    street,
-    city,
-    zipcode
-  };
-}
-
-// function ConstFucntion(street, city, zipcode) {
-//   this.street = street;
-//   this.city = city;
-//   this.zipcode = zipcode;
+// function factoryfunction(street, city, zipcode) {
+//   return {
+//     street,
+//     city,
+//     zipcode
+//   };
 // }
+
+function ConstFucntion(street, city, zipcode) {
+  this.street = street;
+  this.city = city;
+  this.zipcode = zipcode;
+}
 
 // Array exercise
 
