@@ -2,9 +2,9 @@
 
 // staring
 
-// let name = "minhaj ";
-// console.log(`this is called string literal`);
-// console.log(name);
+let name = "minhaj ";
+console.log(`this is called string literal`);
+console.log(name);
 
 // Number
 
