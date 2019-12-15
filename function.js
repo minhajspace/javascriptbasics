@@ -184,17 +184,17 @@
 
 //
 
-// const color = "red";
-// function greeting() {
-//   const color = "green";
-//   console.log(color);
-//   const message = "good morning ";
-//   console.log(message);
-// }
-// function greetingevening() {
-//   const message = "good evening ";
-//   console.log(message);
-// }
+const color = "red";
+function greeting() {
+  const color = "green";
+  console.log(color);
+  const message = "good morning ";
+  console.log(message);
+}
+function greetingevening() {
+  const message = "good evening ";
+  console.log(message);
+}
 
 // greeting();
 // local varible over ride to global variable in function block
@@ -250,7 +250,7 @@ const video = {
   tags: ["a", "b", "c"],
   showTags() {
     this.tags.forEach(function(tag) {
-      console.log(this, tag);
+      console.log(this.title, tag);
     }, this);
   }
   // play() {
