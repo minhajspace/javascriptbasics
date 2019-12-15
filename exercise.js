@@ -10,13 +10,13 @@
 // }
 // showAddress(address);
 
-// function factoryfunction(street, city, zipcode) {
-//   return {
-//     street,
-//     city,
-//     zipcode
-//   };
-// }
+function factoryfunction(street, city, zipcode) {
+  return {
+    street,
+    city,
+    zipcode
+  };
+}
 
 // function ConstFucntion(street, city, zipcode) {
 //   this.street = street;
