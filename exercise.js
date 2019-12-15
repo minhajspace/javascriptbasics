@@ -38,22 +38,22 @@ function ConstFucntion(street, city, zipcode) {
 // // // Search Element
 let arrayfind = [2, 4, 5, 8, 2, 1, 3, 6, 23, 4];
 
-function arraySearch(array, searchElement) {
-  for (let Element of array) if (Element === searchElement) return true;
-  return false;
-}
-
-const result1 = arraySearch(arrayfind, 10);
-//console.log(result1);
-
-// // copy array
-
-// function newArray(array, remove) {
-//   newArray = [];
-//   for (let element of array)
-//     if (!remove.includes(element)) newArray.push(element);
-//   return newArray;
+// function arraySearch(array, searchElement) {
+//   for (let Element of array) if (Element === searchElement) return true;
+//   return false;
 // }
+
+// const result1 = arraySearch(arrayfind, 10);
+// //console.log(result1);
+
+// copy array
+
+function newArray(array, remove) {
+  newArray = [];
+  for (let element of array)
+    if (!remove.includes(element)) newArray.push(element);
+  return newArray;
+}
 
 // const arrayone = newArray(arrayfind, [2, 4]);
 // console.log(arrayone);
