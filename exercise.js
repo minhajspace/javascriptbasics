@@ -43,8 +43,8 @@ function arraySearch(array, searchElement) {
   return false;
 }
 
-// const result1 = arraySearch(arrayfind, 10);
-// //console.log(result1);
+const result1 = arraySearch(arrayfind, 10);
+//console.log(result1);
 
 // // copy array
 
