@@ -60,15 +60,30 @@
 
 // simple prime number Program
 
+// function testPrime(number) {
+//   if (number % 2 === 1) {
+//     console.log(`number is a prime number `);
+//     if (number === 2) {
+//       console.log(`number is a prime number`);
+//     }
+//   } else {
+//     console.log(`number is not a prime number `);
+//   }
+// }
+
+// testPrime(2);
+
+// primeNumber
+
 function testPrime(number) {
-  if (number % 2 === 1) {
-    console.log(`number is a prime number `);
-    if (number === 2) {
-      console.log(`number is a prime number`);
-    }
+  if (number % 2 == 0) {
+    console.log(`number is prime number `);
   } else {
-    console.log(`number is not a prime number `);
+    console.log(`number is not prime number `);
   }
 }
+testPrime(3);
 
-testPrime(2);
+// //   Fabaacci Series
+
+// for (let i = 1; i <= 10; i++) console.log("*");
