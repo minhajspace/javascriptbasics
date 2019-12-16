@@ -88,14 +88,19 @@
 
 // for (let i = 1; i <= 10; i++) console.log("*");
 
-var fibonacci_series = function(n) {
-  if (n === 1) {
-    return [0, 1];
-  } else {
-    var s = fibonacci_series(n - 1);
-    s.push(s[s.length - 1] + s[s.length - 2]);
-    return s;
-  }
-};
+// var fibonacci_series = function(n) {
+//   if (n === 1) {
+//     return [0, 1];
+//   } else {
+//     var s = fibonacci_series(n - 1);
+//     s.push(s[s.length - 1] + s[s.length - 2]);
+//     return s;
+//   }
+// };
 
-console.log(fibonacci_series(8));
+// console.log(fibonacci_series(8));
+
+// Patter Printing
+
+for (i = 1; i <= 10; i++) console.log("*");
+for (j = 1; j <= i; j++) console.log("<br>");
