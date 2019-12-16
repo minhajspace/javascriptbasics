@@ -75,15 +75,27 @@
 
 // primeNumber
 
-function testPrime(number) {
-  if (number % 2 == 0) {
-    console.log(`number is prime number `);
-  } else {
-    console.log(`number is not prime number `);
-  }
-}
-testPrime(3);
+// function testPrime(number) {
+//   if (number % 2 == 0) {
+//     console.log(`number is prime number `);
+//   } else {
+//     console.log(`number is not prime number `);
+//   }
+// }
+// testPrime(3);
 
 // //   Fabaacci Series
 
 // for (let i = 1; i <= 10; i++) console.log("*");
+
+var fibonacci_series = function(n) {
+  if (n === 1) {
+    return [0, 1];
+  } else {
+    var s = fibonacci_series(n - 1);
+    s.push(s[s.length - 1] + s[s.length - 2]);
+    return s;
+  }
+};
+
+console.log(fibonacci_series(8));
