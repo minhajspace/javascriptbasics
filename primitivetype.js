@@ -1,30 +1,30 @@
-//  Primitive or value type
+// //  Primitive or value type
 
-// staring
+// // staring
 
-// let name = "minhaj ";
-// console.log(`this is called string literal`);
-// console.log(name);
+// // let name = "minhaj ";
+// // console.log(`this is called string literal`);
+// // console.log(name);
 
-// Number
+// // Number
 
-let age = 21;
-console.log(`this is called number literal`);
-console.log(age);
+// let age = 21;
+// console.log(`this is called number literal`);
+// console.log(age);
 
-//  boolean
+// //  boolean
 
-let isApproved = ture;
-console.log(isApproved);
+// let isApproved = ture;
+// console.log(isApproved);
 
-// undifined
+// // undifined
 
-// let Name = undefined;
-//  console.log(Name);
+// // let Name = undefined;
+// //  console.log(Name);
 
-// null
+// // null
 
-// let selectedcolor = null;
-// console.log(selectedcolor);
-// selectedcolor = "red";
-// console.log(selectedcolor);
+// // let selectedcolor = null;
+// // console.log(selectedcolor);
+// // selectedcolor = "red";
+// // console.log(selectedcolor);
