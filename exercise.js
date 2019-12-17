@@ -105,13 +105,24 @@
 // for (i = 1; i <= 10; i++) console.log("*");
 // for (j = 1; j <= i; j++) console.log("<br>");
 
-const studentRecord = {
-  name: "Minhaj ahmad khan",
-  age: 23,
-  City: "Minhaj ahmad khan",
-  State: "UP"
-};
+// const studentRecord = {
+//   name: "Minhaj ahmad khan",
+//   age: 23,
+//   City: "Minhaj ahmad khan",
+//   State: "UP"
+// };
 
-const record = studentRecord;
-console.log(record);
-console.log;
+// const record = studentRecord;
+// console.log(record);
+// console.log;
+
+//  What is === operator?
+
+let number = 13;
+let numberTwo = "13";
+
+if (number === numberTwo) {
+  console.log(true);
+} else {
+  console.log(false);
+}
