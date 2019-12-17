@@ -38,4 +38,8 @@
 
 // aleart
 
-window.alert("do not move ");
+// window.alert("do not move ");
+
+// confirm box
+
+window.confirm("are you sure ");
