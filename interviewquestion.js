@@ -22,10 +22,20 @@
 
 // Question no(3) Is it possible to break JavaScript Code into several lines?
 
-let paragraph = ` Hello how are you
-   I am From Lucknow and 
-   i  just love javascript`;
+// let paragraph = ` Hello how are you
+//    I am From Lucknow and
+//    i  just love javascript`;
 
-console.log(paragraph);
+// console.log(paragraph);
 
 // we can use backslash or simple use es6 template literals
+
+// question n0 (6) What are all the types of Pop up boxes available in JavaScript ?
+
+// Alert
+// Confirm and
+// Prompt
+
+// aleart
+
+window.alert("do not move ");
