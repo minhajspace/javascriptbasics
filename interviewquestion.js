@@ -42,4 +42,9 @@
 
 // confirm box
 
-window.confirm("are you sure ");
+// window.confirm("are you sure ");
+
+// Prompt
+
+// window.prompt("please enter a number ");
+//
