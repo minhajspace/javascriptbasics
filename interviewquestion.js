@@ -47,4 +47,11 @@
 // Prompt
 
 // window.prompt("please enter a number ");
-//
+//  Addtion Program using user input
+
+function fullName(firstName, lastName) {
+  firstName = window.prompt();
+  lastName = window.prompt();
+  console.log(firstName, lastName);
+}
+fullName();
