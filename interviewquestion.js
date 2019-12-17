@@ -49,9 +49,15 @@
 // window.prompt("please enter a number ");
 //  Addtion Program using user input
 
-function fullName(firstName, lastName) {
-  firstName = window.prompt();
-  lastName = window.prompt();
-  console.log(firstName, lastName);
-}
-fullName();
+// function fullName(firstName, lastName) {
+//   firstName = window.prompt();
+//   lastName = window.prompt();
+//   console.log(firstName, lastName);
+// }
+// fullName();
+
+// Question Number (6)
+//  What are escape characters?
+
+console.log("I m a 'good' boy");
+console.log('I m a "good" boy');
