@@ -118,11 +118,22 @@
 
 //  What is === operator?
 
-let number = 13;
-let numberTwo = "13";
+// let number = 13;
+// let numberTwo = "13";
 
-if (number === numberTwo) {
-  console.log(true);
-} else {
-  console.log(false);
+// if (number === numberTwo) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+//  What is the use of isNaN function?
+
+function sanitise(x) {
+  if (isNaN(x)) {
+    return NaN;
+  }
+  return x;
 }
+console.log(sanitise("20"));
+console.log(sanitise("not a number  "));
