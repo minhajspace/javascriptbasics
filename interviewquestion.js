@@ -114,5 +114,93 @@
 // console.log(x);
 // // here x is null
 
-const height = window.outerWidth;
-console.log(height);
+// const height = window.outerWidth;
+// console.log(height);
+
+// const a = parseInt("250");
+// console.log(typeof a);
+
+// strict mode
+
+// "use strict";
+
+// a = 10;
+// // b = 30;
+// // console.log(a + b);
+
+// function sum(b) {
+//   "use strict";
+//   console.log(a);
+//   return console.log(b);
+// }
+// sum(20);
+
+// empty an array
+
+//const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// number = [];
+
+// number.length = 0;
+
+// number.splice(0, number.length);
+
+// while (number.length) {
+//   number.pop();
+// }
+// console.log(number);
+
+// let Employee = {
+//   company: "xyz"
+// };
+
+// let Employee1 = Employee;
+
+// delete Employee.company;
+// console.log(Employee1);
+// console.log(Employee);
+
+// var Employee = {
+//   company: "xyz"
+// };
+// var Emp1 = Object.create(Employee);
+// delete Emp1.company;
+// console.log(Emp1.company);
+
+// way to create an object  in js
+
+// Object Constructor
+
+let object = new Object();
+object.name = "minhaj";
+console.log(object);
+
+// Object.create
+
+let newObject = Object.create(object);
+console.log(newObject);
+
+// Object literal syntax
+let literalObject = {
+  name: "Minhaj ahmad khan"
+};
+console.log(literalObject);
+
+// Function constructor
+
+function person(name, age) {
+  let object = {};
+  (object.name = name), (object.age = age);
+  return object;
+}
+const funObject = new person(null, null);
+console.log(funObject);
+
+// Function constructor with prototype
+
+function PersonNew() {
+  PersonNew.prototype.name = "Vishal ananad";
+  PersonNew.prototype.age = 23;
+}
+let newPerson = new PersonNew();
+console.log(newPerson);
