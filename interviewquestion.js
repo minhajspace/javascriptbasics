@@ -114,5 +114,5 @@
 // console.log(x);
 // // here x is null
 
-const height = window.outerHeight;
+const height = window.outerWidth;
 console.log(height);
