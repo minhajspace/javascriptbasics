@@ -28,3 +28,7 @@
 // // console.log(selectedcolor);
 // // selectedcolor = "red";
 // // console.log(selectedcolor);
+
+function func(x) {
+  console.log(typeof x, arguments.length);
+}

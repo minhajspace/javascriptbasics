@@ -59,5 +59,14 @@
 // Question Number (6)
 //  What are escape characters?
 
-console.log("I m a 'good' boy");
-console.log('I m a "good" boy');
+// console.log("I m a 'good' boy");
+// console.log('I m a "good" boy');
+
+// typeof
+
+function func(x) {
+  console.log(typeof x, arguments.length);
+}
+func("1");
+func(1);
+func(0);
