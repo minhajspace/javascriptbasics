@@ -97,8 +97,19 @@
 
 // example.showTags();
 
-const string = "hello how are you friend ";
-console.log(string.charAt([0]));
-const array = ["hello", "how are you "];
-console.log(array.push("i am fine"));
-console.log(typeof string);
+// const string = "hello how are you friend ";
+// console.log(string.charAt([0]));
+// const array = ["hello", "how are you "];
+// console.log(array.push("i am fine"));
+// console.log(typeof string);
+
+// difference between undifined , undeclare and null  ;
+
+console.log(x);
+// here x in undeclared
+let x;
+console.log(x);
+// x is undefined
+x = null;
+console.log(x);
+// here x is null
