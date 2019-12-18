@@ -73,14 +73,26 @@
 
 // this keyword
 
-const test = {
-  age: 23,
-  UroojAge: 22
+// const test = {
+//   age: 23,
+//   UroojAge: 22
+// };
+
+// function MyAge(age) {
+//   this.age = age;
+//   console.log(this);
+// }
+
+// const myfriendAge = new MyAge(24);
+
+const example = {
+  name: "urooj",
+  tags: ["a", "b", "c", "d"],
+  showTags() {
+    this.tags.forEach(tags => {
+      console.log(this.name, tags);
+    });
+  }
 };
 
-function MyAge(age) {
-  this.age = age;
-  console.log(this);
-}
-
-const myfriendAge = new MyAge(24);
+example.showTags();
