@@ -85,14 +85,17 @@
 
 // const myfriendAge = new MyAge(24);
 
-const example = {
-  name: "urooj",
-  tags: ["a", "b", "c", "d"],
-  showTags() {
-    this.tags.forEach(function(tags) {
-      console.log(this.name, tags);
-    }, this);
-  }
-};
+// const example = {
+//   name: "urooj",
+//   tags: ["a", "b", "c", "d"],
+//   showTags() {
+//     this.tags.forEach(function(tags) {
+//       console.log(this.name, tags);
+//     }, this);
+//   }
+// };
 
-example.showTags();
+// example.showTags();
+
+const string = "hello how are you friend ";
+console.log(string.charAt([0]));
