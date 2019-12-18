@@ -99,3 +99,6 @@
 
 const string = "hello how are you friend ";
 console.log(string.charAt([0]));
+const array = ["hello", "how are you "];
+console.log(array.push("i am fine"));
+console.log(array);
