@@ -64,9 +64,23 @@
 
 // typeof
 
-function func(x) {
-  console.log(typeof x, arguments.length);
+// function func(x) {
+//   console.log(typeof x, arguments.length);
+// }
+// func("1");
+// func(1);
+// func(0);
+
+// this keyword
+
+const test = {
+  age: 23,
+  UroojAge: 22
+};
+
+function MyAge(age) {
+  this.age = age;
+  console.log(this);
 }
-func("1");
-func(1);
-func(0);
+
+const myfriendAge = new MyAge(24);
