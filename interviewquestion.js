@@ -89,9 +89,9 @@ const example = {
   name: "urooj",
   tags: ["a", "b", "c", "d"],
   showTags() {
-    this.tags.forEach(tags => {
+    this.tags.forEach(function(tags) {
       console.log(this.name, tags);
-    });
+    }, this);
   }
 };
 
