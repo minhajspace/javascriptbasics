@@ -105,11 +105,14 @@
 
 // difference between undifined , undeclare and null  ;
 
-console.log(x);
-// here x in undeclared
-let x;
-console.log(x);
-// x is undefined
-x = null;
-console.log(x);
-// here x is null
+// console.log(x);
+// // here x in undeclared
+// let x;
+// console.log(x);
+// // x is undefined
+// x = null;
+// console.log(x);
+// // here x is null
+
+const height = window.outerHeight;
+console.log(height);
