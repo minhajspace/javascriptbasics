@@ -171,36 +171,48 @@
 
 // Object Constructor
 
-let object = new Object();
-object.name = "minhaj";
-console.log(object);
+// let object = new Object();
+// object.name = "minhaj";
+// console.log(object);
 
-// Object.create
+// // Object.create
 
-let newObject = Object.create(object);
-console.log(newObject);
+// let newObject = Object.create(object);
+// console.log(newObject);
 
-// Object literal syntax
-let literalObject = {
-  name: "Minhaj ahmad khan"
-};
-console.log(literalObject);
+// // Object literal syntax
+// let literalObject = {
+//   name: "Minhaj ahmad khan"
+// };
+// console.log(literalObject);
 
-// Function constructor
+// // Function constructor
 
-function person(name, age) {
-  let object = {};
-  (object.name = name), (object.age = age);
-  return object;
-}
-const funObject = new person(null, null);
-console.log(funObject);
+// function person(name, age) {
+//   let object = {};
+//   (object.name = name), (object.age = age);
+//   return object;
+// }
+// const funObject = new person(null, null);
+// console.log(funObject);
 
-// Function constructor with prototype
+// // Function constructor with prototype
 
-function PersonNew() {
-  PersonNew.prototype.name = "Vishal ananad";
-  PersonNew.prototype.age = 23;
-}
-let newPerson = new PersonNew();
-console.log(newPerson);
+// function PersonNew() {
+//   PersonNew.prototype.name = "Vishal ananad";
+//   PersonNew.prototype.age = 23;
+// }
+// let newPerson = new PersonNew();
+// console.log(newPerson);
+
+// //
+
+// const Objectone = new Object();
+// console.log(Objectone);
+// //
+// const ObjectTwo = Object.create(Objectone);
+// console.log(ObjectTwo);
+// //
+// const ObjectThree = {};
+// console.log(ObjectThree);
+// //
