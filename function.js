@@ -299,12 +299,28 @@
 
 // currying function
 
-function multiply(a, b) {
-  console.log(a * b);
+// using bind method
+
+// function multiply(a, b) {
+//   console.log(a * b);
+// }
+
+// const multiplyByTwo = multiply.bind(this, 2);
+// multiplyByTwo(8);
+
+// const multiplyByThree = multiply.bind(this, 3);
+// multiplyByThree(4);
+
+// by using clouser
+
+function multiply(x) {
+  return function(y) {
+    console.log(x * y);
+  };
 }
 
-const multiplyByTwo = multiply.bind(this, 2);
-multiplyByTwo(8);
+const multiplyByTwo = multiply(2);
+multiplyByTwo(6);
 
-const multiplyByThree = multiply.bind(this, 3);
-multiplyByThree(4);
+const multiplyByThree = multiply(3);
+multiplyByThree(3);
