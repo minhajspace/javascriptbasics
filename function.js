@@ -288,11 +288,23 @@
 
 // call
 
-function playVideo(a, b) {
-  console.log(this);
-  console.log(a, b);
-}
-playVideo.call({ name: "urooj" }, 20, 30);
-playVideo.apply({ name: "minhaj" }, [20, 30]);
+// function playVideo(a, b) {
+//   console.log(this);
+//   console.log(a, b);
+// }
+// playVideo.call({ name: "urooj" }, 20, 30);
+// playVideo.apply({ name: "minhaj" }, [20, 30]);
 
-playVideo.bind({ name: "vishal" }, 20, 30)();
+// playVideo.bind({ name: "vishal" }, 20, 30)();
+
+// currying function
+
+function multiply(a, b) {
+  console.log(a * b);
+}
+
+const multiplyByTwo = multiply.bind(this, 2);
+multiplyByTwo(8);
+
+const multiplyByThree = multiply.bind(this, 3);
+multiplyByThree(4);
