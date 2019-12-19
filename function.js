@@ -294,3 +294,5 @@ function playVideo(a, b) {
 }
 playVideo.call({ name: "urooj" }, 20, 30);
 playVideo.apply({ name: "minhaj" }, [20, 30]);
+
+playVideo.bind({ name: "vishal" }, 20, 30)();
