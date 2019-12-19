@@ -313,14 +313,14 @@
 
 // by using clouser
 
-function multiply(x) {
-  return function(y) {
-    console.log(x * y);
-  };
-}
+// function multiply(x) {
+//   return function(y) {
+//     console.log(x * y);
+//   };
+// }
 
-const multiplyByTwo = multiply(2);
-multiplyByTwo(6);
+// const multiplyByTwo = multiply(2);
+// multiplyByTwo(6);
 
-const multiplyByThree = multiply(3);
-multiplyByThree(3);
+// const multiplyByThree = multiply(3);
+// multiplyByThree(3);
