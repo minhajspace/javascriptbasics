@@ -266,3 +266,34 @@
 
 // // how can we solve this we have few solution for that
 // // thisArg
+
+// first class Function
+
+// const fun = () => {
+//   console.log("this is a first calss function");
+// };
+
+// console.log("minhaj", fun);
+
+// // first order Function
+
+// const firstOrder = () => {
+//   console.log(
+//     "i am a first order function that doenst accept other function as an argument and doenst return function as an return value "
+//   );
+// };
+// firstOrder();
+
+//  call bind and apply
+
+// call
+
+function playVideo() {
+  console.log(this);
+}
+playVideo.call(run);
+playVideo();
+
+function run() {
+  console.log("run man run ");
+}
