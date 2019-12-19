@@ -288,12 +288,9 @@
 
 // call
 
-function playVideo() {
+function playVideo(a, b) {
   console.log(this);
+  console.log(a, b);
 }
-playVideo.call(run);
-playVideo();
-
-function run() {
-  console.log("run man run ");
-}
+playVideo.call({ name: "urooj" }, 20, 30);
+playVideo.apply({ name: "minhaj" }, [20, 30]);
