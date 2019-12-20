@@ -355,7 +355,7 @@
 // const unary = a => console.log(a + 10);
 // unary(20);
 
-// Impure function
+//Impure function
 
 let number = 1;
 sum = () => {
@@ -367,3 +367,26 @@ sum();
 sum();
 sum();
 sum();
+
+// Pure function
+
+sum = number => {
+  console.log(number);
+  return number + 1;
+};
+sum(4);
+sum(4);
+sum(4);
+sum(4);
+
+// let values = { a: 1 };
+
+// function name(a) {
+//   let b = 1;
+//   a = a * b + 2;
+//   console.log(a);
+//   return a;
+// }
+
+// name(values.a);
+// console.log(values.a);
