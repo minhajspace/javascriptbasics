@@ -334,12 +334,23 @@
 
 // //  first order function
 
-const firstOrderfunction = () => console.log("first order function ");
+// const firstOrderfunction = () => console.log("first order function ");
 
-// Higher  Order function
+// // Higher  Order function
 
-const higherOrderFunction = firstOrderfunction => {
-  return firstOrderfunction;
-};
+// const higherOrderFunction = firstOrderfunction => {
+//   return firstOrderfunction;
+// };
 
-higherOrderFunction(firstOrderfunction());
+// higherOrderFunction(firstOrderfunction());
+
+// Unary Function
+
+// function Unary(a) {
+//   console.log(a + 10);
+// }
+
+// Unary(10);
+
+const unary = a => console.log(a + 10);
+unary(20);
