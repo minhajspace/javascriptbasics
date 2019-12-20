@@ -352,5 +352,18 @@
 
 // Unary(10);
 
-const unary = a => console.log(a + 10);
-unary(20);
+// const unary = a => console.log(a + 10);
+// unary(20);
+
+// Impure function
+
+let number = 1;
+sum = () => {
+  number += 1;
+  console.log(number);
+  return number;
+};
+sum();
+sum();
+sum();
+sum();
