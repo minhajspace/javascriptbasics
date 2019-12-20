@@ -329,9 +329,17 @@
 
 // A function that can be passed as an argument to a function and return as a function or assign  to a varialbe
 
-const handler = () => console.log("this is a click handler function ");
-console.log("click", handler);
+// const handler = () => console.log("this is a click handler function ");
+// console.log("click", handler);
 
-//  first order function
+// //  first order function
 
 const firstOrderfunction = () => console.log("first order function ");
+
+// Higher  Order function
+
+const higherOrderFunction = firstOrderfunction => {
+  return firstOrderfunction;
+};
+
+higherOrderFunction(firstOrderfunction());
