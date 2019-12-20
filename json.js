@@ -28,14 +28,14 @@ record = [
   { Name: "Comércio Mineiro", City: "São Paulo", Country: "Brazil" }
 ];
 
-for (let i = 0; i <= jsonData.record.lenght; i++) {
-  let obj = jsonData.record[i];
-  console.log(`Name ${obj.Name}
-  City ${obj.City}
-  Country ${obj.Country}`);
-}
+// for (let i = 0; i <= jsonData.record.lenght; i++) {
+//   let obj = jsonData.record[i];
+//   console.log(`Name ${obj.Name}
+//   City ${obj.City}
+//   Country ${obj.Country}`);
+// }
 
-// for (let array of record)
-//   console.log(`Name  ${array.Name}
-// City ${array.City}
-// Country ${array.Country}`);
+for (let array of record)
+  console.log(`Name  ${array.Name}
+City ${array.City}
+Country ${array.Country}`);
