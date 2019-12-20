@@ -272,15 +272,14 @@
 // }, 0);
 // console.log(sum);
 
-let objectarray = [{ x: 1, x: 2, x: 3, x: 12 }];
-sum = objectarray.reduce((accumulater, objectarray) => {
-  sum = accumulater + objectarray.x;
-});
-console.log(sum);
+// let objectarray = [{ x: 1, x: 2, x: 3, x: 12 }];
+// sum = objectarray.reduce((accumulater, objectarray) => {
+//   sum = accumulater + objectarray.x;
+// });
+// console.log(sum);
 
 const number = [1, 2, 3, 4, 5, 67, 8, 9, 10, 2, 36, 5, 89, 4, 5, 6, 55];
-number.splice(0, 0, "a", "b");
-console.log(number);
+const newarray = number.splice(0, 3, "a", "b", "c");
 
-const numberTwo = number.slice(0, 6);
-console.log(numberTwo);
+console.log(` Deleted Array ${newarray}`);
+console.log(`orignal array ${number}`);
