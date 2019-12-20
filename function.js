@@ -324,3 +324,10 @@
 
 // const multiplyByThree = multiply(3);
 // multiplyByThree(3);
+
+// First class Function
+
+// A function that can be passed as an argument to a function and return as a function or assign  to a varialbe
+
+const handler = () => console.log("this is a click handler function ");
+console.log("click", handler);
