@@ -331,3 +331,7 @@
 
 const handler = () => console.log("this is a click handler function ");
 console.log("click", handler);
+
+//  first order function
+
+const firstOrderfunction = () => console.log("first order function ");
