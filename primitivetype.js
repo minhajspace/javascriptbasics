@@ -14,13 +14,13 @@
 
 // //  boolean
 
-let isApproved = ture;
-console.log(isApproved);
+// let isApproved = ture;
+// console.log(isApproved);
 
 // // undifined
 
-// // let Name = undefined;
-// //  console.log(Name);
+let Name = undefined;
+console.log(Name);
 
 // // null
 
