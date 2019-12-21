@@ -1,10 +1,10 @@
-// //  Primitive or value type
+// Primitive or value type
 
-// // staring
+staring;
 
-// // let name = "minhaj ";
-// // console.log(`this is called string literal`);
-// // console.log(name);
+let name = "minhaj ";
+console.log(`this is called string literal`);
+console.log(name);
 
 // // Number
 
@@ -29,6 +29,6 @@
 // // selectedcolor = "red";
 // // console.log(selectedcolor);
 
-function func(x) {
-  console.log(typeof x, arguments.length);
-}
+// function func(x) {
+//   console.log(typeof x, arguments.length);
+// }

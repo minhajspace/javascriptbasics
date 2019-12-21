@@ -278,13 +278,13 @@
 // });
 // console.log(sum);
 
-const number = [1, 2, 3, 4, 5, 67, 8, 9, 10, 2, 36, 5, 89, 4, 5, 6, 55];
-let mapArray = number.map((value, index) => {
-  value += 3;
-  console.log(index, value);
-});
+// const number = [1, 2, 3, 4, 5, 67, 8, 9, 10, 2, 36, 5, 89, 4, 5, 6, 55];
+// let mapArray = number.map((value, index) => {
+//   value += 3;
+//   console.log(index, value);
+// });
 
-//console.log(number.splice(0, 3, "a", "b", "c"));
+// console.log(number.splice(0, 3, "a", "b", "c"));
 
-//console.log(` Deleted Array ${newarray}`);
-//console.log(`orignal array ${number}`);
+// console.log(` Deleted Array ${newarray}`);
+// console.log(`orignal array ${number}`);

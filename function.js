@@ -390,3 +390,9 @@ sum(4);
 
 // name(values.a);
 // console.log(values.a);
+
+// hoisting
+
+console.log(name);
+
+var name = "urooj ahmad ";
