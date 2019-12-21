@@ -1,16 +1,16 @@
 // Primitive or value type
 
-staring;
+// staring;
 
-let name = "minhaj ";
-console.log(`this is called string literal`);
-console.log(name);
+// let name = "minhaj ";
+// console.log(`this is called string literal`);
+// console.log(name);
 
 // // Number
 
-// let age = 21;
-// console.log(`this is called number literal`);
-// console.log(age);
+let age = 21;
+console.log(`this is called number literal`);
+console.log(age);
 
 // //  boolean
 
