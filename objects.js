@@ -1,15 +1,15 @@
-// // function masterCirclet() {}
-// // circel = {
-// //   radius: 1,
-// //   loaction: {
-// //     x: 1,
-// //     y: 1
-// //   },
-// //   inVisuble: true,
-// //   welcome: function() {
-// //     return console.log("welcome to object oriented programming");
-// //   }
-// // };
+function masterCirclet() {}
+circel = {
+  radius: 1,
+  loaction: {
+    x: 1,
+    y: 1
+  },
+  inVisuble: true,
+  welcome: function() {
+    return console.log("welcome to object oriented programming");
+  }
+};
 
 // // Factory function
 
