@@ -19,15 +19,15 @@
 
 // // undifined
 
-let Name = undefined;
-console.log(Name);
+// let Name = undefined;
+// console.log(Name);
 
 // // null
 
-// // let selectedcolor = null;
-// // console.log(selectedcolor);
-// // selectedcolor = "red";
-// // console.log(selectedcolor);
+let selectedcolor = null;
+console.log(selectedcolor);
+selectedcolor = "red";
+console.log(selectedcolor);
 
 // function func(x) {
 //   console.log(typeof x, arguments.length);
