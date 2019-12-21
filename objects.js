@@ -34,17 +34,17 @@ function masterfunction(radius, x, y) {
 // // console.log(circel2);
 // //                            Constructor function
 
-// // function ConstructorFunction(radius, x, y) {
-// //   this.radius = radius;
-// //   (this.location = {
-// //     x: x,
-// //     y: y
-// //   }),
-// //     (this.isApproved = true);
-// //   this.draw = function() {
-// //     console.log("draw");
-// //   };
-// // }
+function ConstructorFunction(radius, x, y) {
+  this.radius = radius;
+  (this.location = {
+    x: x,
+    y: y
+  }),
+    (this.isApproved = true);
+  this.draw = function() {
+    console.log("draw");
+  };
+}
 
 // // const circel = new ConstructorFunction(1, 4, 5);
 
