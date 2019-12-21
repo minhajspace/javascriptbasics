@@ -8,14 +8,14 @@
 
 // // Number
 
-let age = 21;
-console.log(`this is called number literal`);
-console.log(age);
+// let age = 21;
+// console.log(`this is called number literal`);
+// console.log(age);
 
 // //  boolean
 
-// let isApproved = ture;
-// console.log(isApproved);
+let isApproved = ture;
+console.log(isApproved);
 
 // // undifined
 
