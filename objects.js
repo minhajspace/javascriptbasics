@@ -34,17 +34,17 @@ function masterfunction(radius, x, y) {
 // // console.log(circel2);
 // //                            Constructor function
 
-function ConstructorFunction(radius, x, y) {
-  this.radius = radius;
-  (this.location = {
-    x: x,
-    y: y
-  }),
-    (this.isApproved = true);
-  this.draw = function() {
-    console.log("draw");
-  };
-}
+// function ConstructorFunction(radius, x, y) {
+//   this.radius = radius;
+//   (this.location = {
+//     x: x,
+//     y: y
+//   }),
+//     (this.isApproved = true);
+//   this.draw = function() {
+//     console.log("draw");
+//   };
+// }
 
 // // const circel = new ConstructorFunction(1, 4, 5);
 
@@ -160,18 +160,18 @@ function ConstructorFunction(radius, x, y) {
 
 // // let number = 10;
 
-// // function increased(number) {
-// //   number++;
-// // }
-// // increased(number);
-// // console.log(number);
-// //         enumerating
-// // const circel = {
-// //   radius: 1,
-// //   draw: function() {
-// //     console.log("draw");
-// //   }
-// // };
+function increased(number) {
+  number++;
+}
+increased(number);
+console.log(number);
+enumerating;
+const circel = {
+  radius: 1,
+  draw: function() {
+    console.log("draw");
+  }
+};
 
 // // for (let key in circel) console.log(key);
 
