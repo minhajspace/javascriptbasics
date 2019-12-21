@@ -1,31 +1,31 @@
-function masterCirclet() {}
-circel = {
-  radius: 1,
-  loaction: {
-    x: 1,
-    y: 1
-  },
-  inVisuble: true,
-  welcome: function() {
-    return console.log("welcome to object oriented programming");
-  }
-};
+// function masterCirclet() {}
+// circel = {
+//   radius: 1,
+//   loaction: {
+//     x: 1,
+//     y: 1
+//   },
+//   inVisuble: true,
+//   welcome: function() {
+//     return console.log("welcome to object oriented programming");
+//   }
+// };
 
-// // Factory function
+//Factory function
 
-// // function masterfunction(radius, x, y) {
-// //   return {
-// //     radius,
-// //     isApproved: true,
-// //     loaction: {
-// //       x,
-// //       y
-// //     },
-// //     welcome() {
-// //       console.log("welcome to object oriented programming");
-// //     }
-// //   };
-// // }
+function masterfunction(radius, x, y) {
+  return {
+    radius,
+    isApproved: true,
+    loaction: {
+      x,
+      y
+    },
+    welcome() {
+      console.log("welcome to object oriented programming");
+    }
+  };
+}
 
 // // const circel = masterfunction(1, 2, 3);
 // // console.log(circel);
