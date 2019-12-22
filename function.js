@@ -399,15 +399,33 @@ sum(4);
 
 // callback in callback
 
-loadScript("/script1.js", function(script) {
-  console.log("first script is loaded");
+// loadScript("/script1.js", function(script) {
+//   console.log("first script is loaded");
 
-  loadScript("/script2.js", function(script) {
-    console.log("second script is loaded");
+//   loadScript("/script2.js", function(script) {
+//     console.log("second script is loaded");
 
-    loadScript("/script3.js", function(script) {
-      console.log("third script is loaded");
-      // after all scripts are loaded
-    });
+//     loadScript("/script3.js", function(script) {
+//       console.log("third script is loaded");
+//       // after all scripts are loaded
+//     });
+//   });
+// });
+
+// Promish changing
+
+new Promise(function(resolve, reject) {
+  setTimeout(() => resolve(1), 1000);
+})
+  .then(function(result) {
+    console.log(result); // 1
+    return result * 2;
+  })
+  .then(function(result) {
+    console.log(result); // 2
+    return result * 3;
+  })
+  .then(function(result) {
+    console.log(result); // 6
+    return result * 4;
   });
-});
