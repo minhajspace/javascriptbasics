@@ -39,7 +39,7 @@ function getPermutations(string) {
     let otherChar = string.substring(0, i) + string.substring(i + 1);
     let otherPermutations = getPermutations(otherChar);
 
-    for (var j = 0; j < otherPermutations.length; j++) {
+    for (j = 0; j < otherPermutations.length; j++) {
       results.push(firstChar + otherPermutations[j]);
     }
   }
