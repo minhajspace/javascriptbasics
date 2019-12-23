@@ -26,23 +26,61 @@
 
 //  Recursively print all permutations of a string
 
-function getPermutations(string) {
-  var results = [];
+// function getPermutations(string) {
+//   var results = [];
 
-  if (string.length === 1) {
-    results.push(string);
-    return results;
-  }
+//   if (string.length === 1) {
+//     results.push(string);
+//     return results;
+//   }
 
-  for (let i = 0; i < string.length; i++) {
-    let firstChar = string[i];
-    let otherChar = string.substring(0, i) + string.substring(i + 1);
-    let otherPermutations = getPermutations(otherChar);
+//   for (let i = 0; i < string.length; i++) {
+//     let firstChar = string[i];
+//     let otherChar = string.substring(0, i) + string.substring(i + 1);
+//     let otherPermutations = getPermutations(otherChar);
 
-    for (j = 0; j < otherPermutations.length; j++) {
-      results.push(firstChar + otherPermutations[j]);
+//     for (j = 0; j < otherPermutations.length; j++) {
+//       results.push(firstChar + otherPermutations[j]);
+//     }
+//   }
+//   return results;
+// }
+// console.log(getPermutations("hello"));
+
+// JavaScript: The longest palindrome in a specified string
+
+function is_Palindrome(str1) {
+  var rev = str1
+    .split("")
+    .reverse()
+    .join("");
+  return str1 == rev;
+}
+
+function longest_palindrome(str1) {
+  var max_length = 0,
+    maxp = "";
+
+  for (var i = 0; i < str1.length; i++) {
+    var subs = str1.substr(i, str1.length);
+
+    for (var j = subs.length; j >= 0; j--) {
+      var sub_subs_str = subs.substr(0, j);
+      if (sub_subs_str.length <= 1) continue;
+
+      if (is_Palindrome(sub_subs_str)) {
+        if (sub_subs_str.length > max_length) {
+          max_length = sub_subs_str.length;
+          maxp = sub_subs_str;
+        }
+      }
     }
   }
-  return results;
+
+  return maxp;
 }
-console.log(getPermutations("hello"));
+console.log(longest_palindrome("abracadabra"));
+
+console.log(
+  longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
+);
