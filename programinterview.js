@@ -84,3 +84,15 @@ console.log(longest_palindrome("abracadabra"));
 console.log(
   longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
 );
+
+// return the first non repeating character in a string in javascript
+
+function firstNonRepeatedCharacter(string) {
+  for (let i = 0; i < string.length; i++) {
+    let c = string.charAt(i);
+    if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+      return c;
+    }
+  }
+  return null;
+}
