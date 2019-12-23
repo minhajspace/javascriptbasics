@@ -355,29 +355,29 @@
 // const unary = a => console.log(a + 10);
 // unary(20);
 
-//Impure function
+// Impure function
 
-let number = 1;
-sum = () => {
-  number += 1;
-  console.log(number);
-  return number;
-};
-sum();
-sum();
-sum();
-sum();
+// let number = 1;
+// sum = () => {
+//   number += 1;
+//   console.log(number);
+//   return number;
+// };
+// sum();
+// sum();
+// sum();
+// sum();
 
 // Pure function
 
-sum = number => {
-  console.log(number);
-  return number + 1;
-};
-sum(4);
-sum(4);
-sum(4);
-sum(4);
+// sum = number => {
+//   console.log(number);
+//   return number + 1;
+// };
+// sum(4);
+// sum(4);
+// sum(4);
+// sum(4);
 
 // let values = { a: 1 };
 
@@ -450,12 +450,12 @@ sum(4);
 
 // web works
 
-let i = 0;
+// let i = 0;
 
-function timedCount() {
-  i = i + 1;
-  postMessage(i);
-  setTimeout("timedCount()", 500);
-}
+// function timedCount() {
+//   i = i + 1;
+//   postMessage(i);
+//   setTimeout("timedCount()", 500);
+// }
 
-timedCount();
+// timedCount();
