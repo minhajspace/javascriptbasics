@@ -111,8 +111,8 @@ for (
 //>count:2var stringsearch = "o"
 str = "this is foo bar";
 for (
-  var count = -1, index = -2;
+  let count = -1, index = -2;
   index != -1;
-  count++, index = str.indexOf(stringsearch, index + 1)
+  console.log(count++, (index = str.indexOf(stringsearch, index + 1)))
 );
 //>count:2
