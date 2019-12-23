@@ -99,3 +99,20 @@ function firstNonRepeatedCharacter(string) {
 }
 
 firstNonRepeatedCharacter("hello");
+
+// Count the number of occurrences of a character in a string in Javascript
+var stringsearch = "o",
+  str = "this is foo bar";
+for (
+  var count = -1, index = -2;
+  index != -1;
+  count++, index = str.indexOf(stringsearch, index + 1)
+);
+//>count:2var stringsearch = "o"
+str = "this is foo bar";
+for (
+  var count = -1, index = -2;
+  index != -1;
+  count++, index = str.indexOf(stringsearch, index + 1)
+);
+//>count:2
