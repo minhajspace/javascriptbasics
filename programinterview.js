@@ -156,3 +156,5 @@ var areAnagrams = function(a, b) {
   // all characters match!
   return true;
 };
+
+areAnagrams(20, 30);
