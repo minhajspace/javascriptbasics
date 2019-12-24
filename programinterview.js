@@ -49,70 +49,70 @@
 
 // JavaScript: The longest palindrome in a specified string
 
-function is_Palindrome(str1) {
-  let rev = str1
-    .split("")
-    .reverse()
-    .join("");
-  return str1 == rev;
-}
+// function is_Palindrome(str1) {
+//   let rev = str1
+//     .split("")
+//     .reverse()
+//     .join("");
+//   return str1 == rev;
+// }
 
-function longest_palindrome(str1) {
-  let max_length = 0,
-    maxp = "";
+// function longest_palindrome(str1) {
+//   let max_length = 0,
+//     maxp = "";
 
-  for (let i = 0; i < str1.length; i++) {
-    let subs = str1.substr(i, str1.length);
+//   for (let i = 0; i < str1.length; i++) {
+//     let subs = str1.substr(i, str1.length);
 
-    for (let j = subs.length; j >= 0; j--) {
-      let sub_subs_str = subs.substr(0, j);
-      if (sub_subs_str.length <= 1) continue;
+//     for (let j = subs.length; j >= 0; j--) {
+//       let sub_subs_str = subs.substr(0, j);
+//       if (sub_subs_str.length <= 1) continue;
 
-      if (is_Palindrome(sub_subs_str)) {
-        if (sub_subs_str.length > max_length) {
-          max_length = sub_subs_str.length;
-          maxp = sub_subs_str;
-        }
-      }
-    }
-  }
+//       if (is_Palindrome(sub_subs_str)) {
+//         if (sub_subs_str.length > max_length) {
+//           max_length = sub_subs_str.length;
+//           maxp = sub_subs_str;
+//         }
+//       }
+//     }
+//   }
 
-  return maxp;
-}
-console.log(longest_palindrome("abracadabra"));
+//   return maxp;
+// }
+// console.log(longest_palindrome("abracadabra"));
 
-console.log(
-  longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
-);
+// console.log(
+//   longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
+// );
 
 // return the first non repeating character in a string in javascript
 
-function firstNonRepeatedCharacter(string) {
-  for (let i = 0; i < string.length; i++) {
-    let c = string.charAt(i);
-    if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
-      console.log(c);
-      return c;
-    }
-  }
-  return null;
-}
+// function firstNonRepeatedCharacter(string) {
+//   for (let i = 0; i < string.length; i++) {
+//     let c = string.charAt(i);
+//     if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+//       console.log(c);
+//       return c;
+//     }
+//   }
+//   return null;
+// }
 
-firstNonRepeatedCharacter("hello");
+// firstNonRepeatedCharacter("hello");
 
 // Count the number of occurrences of a character in a string in Javascript
-var stringsearch = "o",
-  str = "this is foo bar";
-for (
-  var count = -1, index = -2;
-  index != -1;
-  count++, index = str.indexOf(stringsearch, index + 1)
-);
-//>count:2var stringsearch = "o"
-str = "this is foo bar";
-for (
-  let count = -1, index = -2;
-  index != -1;
-  console.log(count++, (index = str.indexOf(stringsearch, index + 1)))
-);
-//>count:2
+// var stringsearch = "o",
+//   str = "this is foo bar";
+// for (
+//   var count = -1, index = -2;
+//   index != -1;
+//   count++, index = str.indexOf(stringsearch, index + 1)
+// );
+// >count:2var stringsearch = "o"
+// str = "this is foo bar";
+// for (
+//   let count = -1, index = -2;
+//   index != -1;
+//   console.log(count++, (index = str.indexOf(stringsearch, index + 1)))
+// );
+// >count:2
