@@ -117,6 +117,7 @@
 // );
 // >count:2
 
+//  anagram comparison
 function compare(a, b) {
   var y = a
       .split("")
