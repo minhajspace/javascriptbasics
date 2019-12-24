@@ -135,10 +135,10 @@
 // }
 // console.log(compare(20, 30));
 
+// one other way
 var areAnagrams = function(a, b) {
-  // if length is not the same the words can't be anagrams
   if (a.length != b.length) return false;
-  // make words comparable
+
   a = a
     .split("")
     .sort()
