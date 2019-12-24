@@ -118,19 +118,41 @@
 // >count:2
 
 //  anagram comparison
-function compare(a, b) {
-  var y = a
-      .split("")
-      .sort()
-      .join(""),
-    z = b
-      .split("")
-      .sort()
-      .join("");
-  console.log(
-    z === y
-      ? a + " and " + b + " are anagrams!"
-      : a + " and " + b + " are not anagrams."
-  );
-}
-console.log(compare(20, 30));
+// function compare(a, b) {
+//   var y = a
+//       .split("")
+//       .sort()
+//       .join(""),
+//     z = b
+//       .split("")
+//       .sort()
+//       .join("");
+//   console.log(
+//     z === y
+//       ? a + " and " + b + " are anagrams!"
+//       : a + " and " + b + " are not anagrams."
+//   );
+// }
+// console.log(compare(20, 30));
+
+var areAnagrams = function(a, b) {
+  // if length is not the same the words can't be anagrams
+  if (a.length != b.length) return false;
+  // make words comparable
+  a = a
+    .split("")
+    .sort()
+    .join("");
+  b = b
+    .split("")
+    .sort()
+    .join("");
+  // check if each character match before proceeding
+  for (var i = 0; i < a.length; i++) {
+    if (a.charAt(i) != b.charAt(i)) {
+      return false;
+    }
+  }
+  // all characters match!
+  return true;
+};
