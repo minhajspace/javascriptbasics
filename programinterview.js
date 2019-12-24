@@ -133,4 +133,4 @@ function compare(a, b) {
       : a + " and " + b + " are not anagrams."
   );
 }
-compare(20, 30);
+console.log(compare(20, 30));
