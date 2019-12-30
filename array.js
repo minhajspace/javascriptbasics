@@ -320,13 +320,19 @@ let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
 
 // }
 // console.log(b)
-obj = {};
+// obj = {};
 
-for (let value of arr) {
-    obj[value] = true;
+// for (let value of arr) {
+//     obj[value] = true;
 
-}
-console.log(obj)
+// }
+// console.log(obj)
 
-const arr1 = Object.keys(obj)
-console.log(arr1)
+// const arr1 = Object.keys(obj)
+// console.log(arr1)
+
+
+// Constructor function 
+let a = new Set(arr)
+a = [...new Set(arr)]
+console.log(a)
