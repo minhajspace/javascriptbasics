@@ -326,3 +326,7 @@ for (let value of arr) {
     obj[value] = true;
 
 }
+console.log(obj)
+
+const arr1 = Object.keys(obj)
+console.log(arr1)
