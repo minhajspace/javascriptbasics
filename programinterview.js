@@ -136,25 +136,25 @@
 // console.log(compare(20, 30));
 
 // one other way
-var areAnagrams = function(a, b) {
-  if (a.length != b.length) return false;
+// var areAnagrams = function(a, b) {
+//   if (a.length != b.length) return false;
 
-  a = a
-    .split("")
-    .sort()
-    .join("");
-  b = b
-    .split("")
-    .sort()
-    .join("");
-  // check if each character match before proceeding
-  for (var i = 0; i < a.length; i++) {
-    if (a.charAt(i) != b.charAt(i)) {
-      return false;
-    }
-  }
-  // all characters match!
-  return true;
-};
+//   a = a
+//     .split("")
+//     .sort()
+//     .join("");
+//   b = b
+//     .split("")
+//     .sort()
+//     .join("");
+//   check if each character match before proceeding
+//   for (var i = 0; i < a.length; i++) {
+//     if (a.charAt(i) != b.charAt(i)) {
+//       return false;
+//     }
+//   }
+//   all characters match!
+//   return true;
+// };
 
-areAnagrams(20, 30);
+// areAnagrams(20, 30);

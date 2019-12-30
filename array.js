@@ -288,3 +288,11 @@
 
 // console.log(` Deleted Array ${newarray}`);
 // console.log(`orignal array ${number}`);
+
+const num = [1, 23, 6, 5, 6, 45, 5, 45, 6, 4, 5, 54, 5, 56, 4, 5, 4, 5];
+const newarr = num.filter((element) => {
+    result = element == 5 && element == 6 && element == 4
+    console.log(result)
+    return result
+})
+console.log(newarr)
