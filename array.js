@@ -299,11 +299,11 @@
 
 // finding non repeting array 
 let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
+console.log(arr.length)
 let b = [];
 
-for (let i = 0; i < arr.length; i++) {
-    if (b.indexOf(arr[i]) === -1) {
-        b.push(arr[i])
+for (let index of arr)
+    if (b.indexOf(index) === -1) {
+        b.push(index)
     }
-}
 console.log(b)
