@@ -301,17 +301,6 @@ let b = [];
 // finding non repeting array 
 let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
 
-arr.sort();
-let temp;
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== temp) {
-        b.push(arr[i])
-        temp = arr[i]
-    }
-
-}
-console.log(b)
-
 
 // for (let index of arr)
 //     if (b.indexOf(index) === -1) {
@@ -319,3 +308,22 @@ console.log(b)
 //     }
 // console.log(b)
 
+
+
+// arr.sort();
+// let temp;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== temp) {
+//         b.push(arr[i])
+//         temp = arr[i]
+//     }
+
+// }
+// console.log(b)
+obj = {}
+for (let i of arr) {
+    obj[i] = true
+}
+let c = Object.keys(obj)
+
+console.log(c)
