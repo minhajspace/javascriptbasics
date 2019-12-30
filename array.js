@@ -297,13 +297,17 @@
 // })
 // console.log(newarr)
 
+let b = [];
 // finding non repeting array 
 let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
-console.log(arr.length)
-let b = [];
 
-for (let index of arr)
-    if (b.indexOf(index) === -1) {
-        b.push(index)
-    }
-console.log(b)
+
+
+
+
+// for (let index of arr)
+//     if (b.indexOf(index) === -1) {
+//         b.push(index)
+//     }
+// console.log(b)
+
