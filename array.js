@@ -320,10 +320,9 @@ let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
 
 // }
 // console.log(b)
-obj = {}
-for (let i of arr) {
-    obj[i] = true
-}
-let c = Object.keys(obj)
+obj = {};
 
-console.log(c)
+for (let value of arr) {
+    obj[value] = true;
+
+}
