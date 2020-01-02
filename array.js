@@ -297,9 +297,9 @@
 // })
 // console.log(newarr)
 
-let b = [];
+// let b = [];
 // finding non repeting array 
-let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
+// let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
 
 
 // for (let index of arr)
@@ -337,34 +337,52 @@ let arr = [2, 2, 5, 6, 8, 7, 4, 50, 12, 3, 4]
 // a = [...new Set(arr)]
 // console.log(a)
 
-console.log(arr)
+// console.log(arr)
 
-let result = [];
-for (let i = 0; i < arr.length; i++) {
-    if (result.indexOf(arr[i]) === -1) {
-        result.push(arr[i])
+// let result = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (result.indexOf(arr[i]) === -1) {
+//         result.push(arr[i])
+//     }
+// }
+// console.log(result)
+// let temp = [];
+// for (let value of arr) {
+//     if (temp.indexOf(arr[value]) === -1) {
+//         temp.push(arr[value])
+//     }
+// }
+
+// console.log(temp)
+// let obj = {}
+// for (let index of arr) {
+//     obj[index] = true
+// }
+// console.log(obj)
+
+// resultnew = Object.keys(obj)
+// console.log(resultnew)
+// console.log(Number(resultnew))
+// console.log(parseInt(resultnew))
+
+
+// let Constructorfun = [...arr = new Set(arr)]
+// console.log(Constructorfun)
+
+
+
+// arrow function 
+
+const person = {
+    firstName: '',
+    lastName: '',
+
+    setName: function (name1) {
+
+        let nameArray = name.split('');
+        this.firstName = name[0];
+        this.lastName = name[1];
+        nameArray('Minhaj ahmad ');
     }
+
 }
-console.log(result)
-let temp = [];
-for (let value of arr) {
-    if (temp.indexOf(arr[value]) === -1) {
-        temp.push(arr[value])
-    }
-}
-
-console.log(temp)
-let obj = {}
-for (let index of arr) {
-    obj[index] = true
-}
-console.log(obj)
-
-resultnew = Object.keys(obj)
-console.log(resultnew)
-console.log(Number(resultnew))
-console.log(parseInt(resultnew))
-
-
-let Constructorfun = [...arr = new Set(arr)]
-console.log(Constructorfun)
