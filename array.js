@@ -373,16 +373,19 @@
 
 // arrow function 
 
-const person = {
-    firstName: '',
-    lastName: '',
+// const person = {
+//     firstName: '',
+//     lastName: '',
 
-    setName: function (name1) {
+//     setName: function (name1) {
 
-        let nameArray = name.split('');
-        this.firstName = name[0];
-        this.lastName = name[1];
-        nameArray('Minhaj ahmad ');
-    }
+//         let nameArray = name.split('');
+//         this.firstName = name[0];
+//         this.lastName = name[1];
+//         nameArray('Minhaj ahmad ');
+//     }
 
-}
+// }
+
+// let name = prompt("enter you name");
+// console.log(name)

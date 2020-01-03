@@ -503,3 +503,26 @@
 //   console.log(`Name = ${array.Name}
 // City =  ${array.City}
 // Country = ${array.Country}`);
+
+
+
+
+
+// function delaration and function expression 
+
+
+delaration();
+
+function delaration() {
+    console.log('function declarating ')
+}
+
+
+
+let name1 = function () {
+    return value = ('function expression')
+}
+name1();
+
+let functionname = name1;
+console.log(functionname)
