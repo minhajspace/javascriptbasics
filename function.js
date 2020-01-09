@@ -543,13 +543,12 @@
 // console.log(reverseString("hello"));
 
 function reverseString(str) {
-    let result;
+
     var newString = [];
     for (var i = str.length - 1; i >= 0; i--) {
         newString.push(str[i])
-        result = newString.join('')
 
     }
-    return console.log(result);
+    return console.log(newString.join(''));
 }
 reverseString('hello');
