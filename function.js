@@ -537,7 +537,19 @@
 
 // string rever function 
 
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
+// }
+// console.log(reverseString("hello"));
+
 function reverseString(str) {
-    return str.split("").reverse().join("");
+    let result;
+    var newString = [];
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString.push(str[i])
+        result = newString.join('')
+
+    }
+    return console.log(result);
 }
-console.log(reverseString("hello"));
+reverseString('hello');
