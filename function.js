@@ -538,10 +538,12 @@
 // string rever function 
 
 function reverse(string) {
-    result = "";
     for (let i = string.lenght - 1; i >= 0; i--) {
-        result = result + string[i]
+        let result = [];
+        console.log(result)
+        result.push(string[i])
+        console.log(result)
     }
     return console.log(result)
 }
-reverse("hello")
+console.log(reverse("hello"))
