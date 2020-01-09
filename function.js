@@ -556,11 +556,12 @@
 // }
 // reverseString('');
 
-function exchange(numa, numb) {
-    let temp = numa;
-    let a = numb;
-    let b = numa;
+function exchange(x, y) {
+    x = x + y;
+    y = x - y
+    x = x - y
 
-    return console.log(`numa is ${a} and number b${b}`)
+
+    return console.log(`numa is ${x} and number b${y}`)
 }
 (exchange(20, 30))
