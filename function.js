@@ -537,13 +537,7 @@
 
 // string rever function 
 
-function reverse(string) {
-    for (let i = string.lenght - 1; i >= 0; i--) {
-        let result = [];
-        console.log(result)
-        result.push(string[i])
-        console.log(result)
-    }
-    return console.log(result)
+function reverseString(str) {
+    return str.split("").reverse().join("");
 }
-console.log(reverse("hello"))
+console.log(reverseString("hello"));
