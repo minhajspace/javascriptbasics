@@ -511,18 +511,37 @@
 // function delaration and function expression 
 
 
-delaration();
+// delaration();
 
-function delaration() {
-    console.log('function declarating ')
+// function delaration() {
+//     console.log('function declarating ')
+// }
+
+
+
+// let name1 = function () {
+//     return value = ('function expression')
+// }
+// name1();
+
+// let functionname = name1;
+// console.log(functionname)
+
+
+// set interval 
+
+{/* <input type="button">
+    coutner
+</input> */}
+
+
+// string rever function 
+
+function reverse(string) {
+    result = "";
+    for (let i = string.lenght - 1; i >= 0; i--) {
+        result = result + string[i]
+    }
+    return console.log(result)
 }
-
-
-
-let name1 = function () {
-    return value = ('function expression')
-}
-name1();
-
-let functionname = name1;
-console.log(functionname)
+reverse("hello")
