@@ -542,13 +542,25 @@
 // }
 // console.log(reverseString("hello"));
 
-function reverseString(str) {
+// function reverseString(str) {
 
-    var newString = [];
-    for (var i = str.length - 1; i >= 0; i--) {
-        newString.push(str[i])
+//     var newString = [];
 
-    }
-    return console.log(newString.join(''));
+
+
+//     for (var i = str.length - 1; i >= 0; i--) {
+//         newString.push(str[i])
+
+//     }
+//     return console.log(newString.join(''));
+// }
+// reverseString('');
+
+function exchange(numa, numb) {
+    let temp = numa;
+    let a = numb;
+    let b = numa;
+
+    return console.log(`numa is ${a} and number b${b}`)
 }
-reverseString('hello');
+(exchange(20, 30))
