@@ -389,3 +389,20 @@
 
 // let name = prompt("enter you name");
 // console.log(name)
+
+
+let newname = [22, 3, 1, 4, 5, 6, 4, 1, 2, 36, 45, 8, 5, 6, 2, 1, 2];
+// let result = [];
+// function Remove(newname) {
+//     for (let index of newname) {
+//         if (result.indexOf(index) === -1) {
+//             result.push(index)
+//         }
+
+//     }
+//     return console.log(result)
+// }
+// console.log(Remove(newname))
+
+// let Constructorfun = [...arr = new Set(newname)]
+// console.log(Constructorfun)
