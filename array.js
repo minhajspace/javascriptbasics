@@ -457,5 +457,3 @@ function getMissing(string) {
                     }, [])
                     .join(' ');
             }
-
-            console.log(getMissing('3 -1 0 5'))
