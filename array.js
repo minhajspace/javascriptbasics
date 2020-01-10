@@ -433,3 +433,10 @@
 // console.log(Constructorfun)
 
 // finding an missing array element from a sorted array 
+
+function getMissing(string) {
+    return string
+        .split(' ')
+        .map(Number)
+        .sort((a, b) => a - b)
+        .reduce((r, v, i, a) => {
