@@ -391,7 +391,32 @@
 // console.log(name)
 
 
-let newname = [22, 3, 1, 4, 5, 6, 4, 1, 2, 36, 45, 8, 5, 6, 2, 1, 2];
+// let newname = [22, 3, 1, 4, 5, 6, 4, 1, 2, 36, 45, 8, 5, 6, 2, 1, 2];
+// function removeelement(array) {
+
+//     let nonrepeting = []
+//     for (let index of array) {
+//         if (nonrepeting.indexOf(index) === -1)
+//             nonrepeting.push(index)
+//     }
+//     return nonrepeting
+// }
+// console.log(removeelement(newname))
+
+// let newresult = [...newname = new Set(newname)]
+// console.log(newresult)
+
+
+
+
+
+
+
+
+
+
+
+
 // let result = [];
 // function Remove(newname) {
 //     for (let index of newname) {
@@ -406,3 +431,5 @@ let newname = [22, 3, 1, 4, 5, 6, 4, 1, 2, 36, 45, 8, 5, 6, 2, 1, 2];
 
 // let Constructorfun = [...arr = new Set(newname)]
 // console.log(Constructorfun)
+
+// finding an missing array element from a sorted array 
