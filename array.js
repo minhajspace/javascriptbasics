@@ -451,4 +451,4 @@ function getMissing(string) {
         .join(' ');
 }
 
-console.log(getMissing('136548'));
+console.log(getMissing([1, 2, 3, 4, 6]));
