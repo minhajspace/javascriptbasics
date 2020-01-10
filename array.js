@@ -433,27 +433,22 @@
 // console.log(Constructorfun)
 
 // finding an missing array element from a sorted array 
-
 function getMissing(string) {
     return string
         .split(' ')
         .map(Number)
         .sort((a, b) => a - b)
         .reduce((r, v, i, a) => {
-            function getMissing(string) {
-                return string
-                    .split(' ')
-                    .map(Number)
-                    .sort((a, b) => a - b)
-                    .reduce((r, v, i, a) => {
-                        var last = a[i - 1];
-                        if (!i) {
-                            return r;
-                        }
-                        while (++last !== v) {
-                            r.push(last);
-                        }
-                        return r;
-                    }, [])
-                    .join(' ');
+            var last = a[i - 1];
+            if (!i) {
+                return r;
             }
+            while (++last !== v) {
+                r.push(last);
+            }
+            return r;
+        }, [])
+        .join(' ');
+}
+
+console.log(getMissing('136548'));
