@@ -440,3 +440,22 @@ function getMissing(string) {
         .map(Number)
         .sort((a, b) => a - b)
         .reduce((r, v, i, a) => {
+            function getMissing(string) {
+                return string
+                    .split(' ')
+                    .map(Number)
+                    .sort((a, b) => a - b)
+                    .reduce((r, v, i, a) => {
+                        var last = a[i - 1];
+                        if (!i) {
+                            return r;
+                        }
+                        while (++last !== v) {
+                            r.push(last);
+                        }
+                        return r;
+                    }, [])
+                    .join(' ');
+            }
+
+            console.log(getMissing('3 -1 0 5'))
