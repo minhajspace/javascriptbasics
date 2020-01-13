@@ -40,12 +40,12 @@ const result1 = courses.find(function (result1) {
 });
 console.log(result1);
 
-// // // const arrayNumber = [20, 25, 40, 36, 78];
+const arrayNumber = [20, 25, 40, 36, 78];
 
-// // // const result = arrayNumber.find(function(result) {
-// // //   return result > 20 && result <= 40;
-// // // });
-// // // console.log(result);
+const result = arrayNumber.find(function (result) {
+    return result > 20 && result <= 40;
+});
+console.log(result);
 
 // // // const number2 = [
 // // //   { id: 1, value: "a" },
