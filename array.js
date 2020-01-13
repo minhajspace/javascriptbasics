@@ -47,15 +47,15 @@ const result = arrayNumber.find(function (result) {
 });
 console.log(result);
 
-// // // const number2 = [
-// // //   { id: 1, value: "a" },
-// // //   { id: 2, value: "b" }
-// // // ];
+const number2 = [
+    { id: 1, value: "a" },
+    { id: 2, value: "b" }
+];
 
-// // // const anotherResult = number2.find(anotherResult => {
-// // //   return anotherResult.value === "a";
-// // // });
-// // // console.log(anotherResult);
+const anotherResult = number2.find(anotherResult => {
+    return anotherResult.value === "a";
+});
+console.log(anotherResult);
 
 // // //                       arrow function
 
