@@ -433,22 +433,31 @@
 // console.log(Constructorfun)
 
 // finding an missing array element from a sorted array 
-function getMissing(string) {
-    return string
-        .split(' ')
-        .map(Number)
-        .sort((a, b) => a - b)
-        .reduce((r, v, i, a) => {
-            var last = a[i - 1];
-            if (!i) {
-                return r;
-            }
-            while (++last !== v) {
-                r.push(last);
-            }
-            return r;
-        }, [])
-        .join(' ');
-}
+// function getMissing(string) {
+//     return string
+//         .split(' ')
+//         .map(Number)
+//         .sort((a, b) => a - b)
+//         .reduce((r, v, i, a) => {
+//             var last = a[i - 1];
+//             if (!i) {
+//                 return r;
+//             }
+//             while (++last !== v) {
+//                 r.push(last);
+//             }
+//             return r;
+//         }, [])
+//         .join(' ');
+// }
 
-console.log(getMissing("1 2 3 5 7 8"));
+// console.log(getMissing("1 2 3 5 7 8"));
+
+let num1;
+function isPrime(num) {
+    if (num % num == 0)
+        num1 = num
+    console.log(num1)
+    return num1
+}
+console.log(isPrime(4))
