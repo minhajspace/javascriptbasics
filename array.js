@@ -28,17 +28,17 @@
 
 // // // // Now Finding Element in Refrence type Array
 
-// // // const courses = [
-// // //   { id: 1, name: "Btech" },
-// // //   { id: 2, name: "Bsc" },
-// // //   { id: 3, name: "Ba" },
-// // //   { id: 4, name: "Bca " }
-// // // ];
+const courses = [
+    { id: 1, name: "Btech" },
+    { id: 2, name: "Bsc" },
+    { id: 3, name: "Ba" },
+    { id: 4, name: "Bca " }
+];
 
-// // // const result1 = courses.find(function(result1) {
-// // //   return result1.name === "Btech";
-// // // });
-// // // console.log(result1);
+const result1 = courses.find(function (result1) {
+    return result1.name === "Btech";
+});
+console.log(result1);
 
 // // // const arrayNumber = [20, 25, 40, 36, 78];
 
