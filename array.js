@@ -59,12 +59,12 @@ console.log(anotherResult);
 
 // // //                       arrow function
 
-// // // const newnumber = [1, 5, 6, 8, 12];
+const newnumber = [1, 5, 6, 8, 12];
 
-// // // const result = newnumber.find(result => {
-// // //   return result > 5;
-// // // });
-// // // console.log(result);
+const result = newnumber.find(result => {
+    return result > 5;
+});
+console.log(result);
 
 // // // //                    Removing element from array
 // // // //  method remove element form the end of the array
