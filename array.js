@@ -453,14 +453,24 @@
 
 // console.log(getMissing("1 2 3 5 7 8"));
 
-function isPrime(num) {
-    for (let i = 2; i < num; i++) {
-        if (num % i == 0) {
-            return (` ${num} number is not a prime number`)
-        }
-        return (`${num} number is a prime number`)
+// function isPrime(num) {
+//     for (let i = 2; i < num; i++) {
+//         if (num % i == 0) {
+//             return (` ${num} number is not a prime number`)
+//         }
+//         return (`${num} number is  prime number`)
+//     }
+
+// }
+
+// console.log(isPrime(3))
+
+function reverse(string) {
+    let result = []
+    for (let index of string) {
+        if (result.indexOf(index) === -1)
+            result.push(index)
     }
-
+    return result;
 }
-
-console.log(isPrime(3))
+console.log(reverse("hello"))
