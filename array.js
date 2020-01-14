@@ -363,7 +363,7 @@
 // resultnew = Object.keys(obj)
 // console.log(resultnew)
 // console.log(Number(resultnew))
-// console.log(parseInt(resultnew))
+// console.log(parselet(resultnew))
 
 
 // let Constructorfun = [...arr = new Set(arr)]
@@ -465,12 +465,33 @@
 
 // console.log(isPrime(3))
 
-function reverse(string) {
-    let result = []
-    for (let index of string) {
-        if (result.indexOf(index) === -1)
-            result.push(index)
-    }
-    return result;
+// function reverse(string) {
+//     let result = []
+//     for (let index of string) {
+//         if (result.indexOf(index) === -1)
+//             result.push(index)
+//     }
+//     return result;
+// }
+// console.log(reverse("hello"))
+
+// finding missing array 
+// const questio = [1, 2, 4, 6, 7, 8, 9]
+// result = [];
+// function missing(array) {
+//     let count = array.length
+//     let total = (count + 1) * (count + 2) / 2;
+//     console.log(total)
+//     console.log(count)
+//     for (i = 0; i < total; i++) {
+//         total = total - (array[i])
+//     }
+//     return total;
+
+// }
+// console.log(missing(questio))
+function finding() {
+
+
+
 }
-console.log(reverse("hello"))
