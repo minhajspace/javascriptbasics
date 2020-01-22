@@ -489,9 +489,18 @@
 //     return total;
 
 // }
+
 // console.log(missing(questio))
-function finding() {
 
+let question = [1, 2, 2, 3, 3, 4]
+let result = []
+function finding(num) {
+    for (index of num) {
+        if (result.indexOf(index) == -1) {
+            result.push(index)
 
-
+        }
+    } return result
 }
+
+console.log(finding(question))
