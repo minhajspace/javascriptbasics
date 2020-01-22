@@ -508,9 +508,9 @@
 
 // console.log(finding(question, size))
 
-let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
-
-let uniq = names
+// let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
+let question = [1, 2, 2, 3, 3, 4]
+let uniq = question
     .map((name) => {
         return {
             count: 1,
@@ -525,3 +525,14 @@ let uniq = names
 let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
 
 console.log(duplicates) // [ 'Nancy' ]
+
+function notUnique(inputarray) {
+    inputarray.map((Element) => {
+        return {
+            count: 1,
+            name: element
+        }
+    }).reduce((a, b) > {
+
+    })
+}
