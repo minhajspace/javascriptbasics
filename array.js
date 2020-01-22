@@ -439,7 +439,7 @@
 //         .map(Number)
 //         .sort((a, b) => a - b)
 //         .reduce((r, v, i, a) => {
-//             var last = a[i - 1];
+//             let last = a[i - 1];
 //             if (!i) {
 //                 return r;
 //             }
@@ -492,15 +492,36 @@
 
 // console.log(missing(questio))
 
-let question = [1, 2, 2, 3, 3, 4]
-let result = []
-function finding(num) {
-    for (index of num) {
-        if (result.indexOf(index) == -1) {
-            result.push(index)
+// let question = [1, 2, 2, 3, 3, 4]
+// let size = question.length
+// function finding(num, size) {
+//     result = [];
+//     for (let i = 0; i < size; i++) {
+//         for (let j = i + 0; j < size; j++) {
+//             if (num[i] == num[j])
+//                 console.log(num[j])
+//         }
+//     }
+//     return result
+// }
 
+
+// console.log(finding(question, size))
+
+let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
+
+let uniq = names
+    .map((name) => {
+        return {
+            count: 1,
+            name: name
         }
-    } return result
-}
+    })
+    .reduce((a, b) => {
+        a[b.name] = (a[b.name] || 0) + b.count
+        return a
+    }, {})
 
-console.log(finding(question))
+let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
+
+console.log(duplicates) // [ 'Nancy' ]
