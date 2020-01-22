@@ -526,13 +526,8 @@ let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
 
 console.log(duplicates) // [ 'Nancy' ]
 
-function notUnique(inputarray) {
-    inputarray.map((Element) => {
-        return {
-            count: 1,
-            name: element
-        }
-    }).reduce((a, b) > {
 
-    })
-}
+
+console.log([...new Set(
+    question.filter((value, index, self) => self.indexOf(value) !== index))]
+);
