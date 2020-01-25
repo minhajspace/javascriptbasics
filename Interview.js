@@ -15,3 +15,8 @@ function addThreeDigit(num) {
 console.log(addThreeDigit((20)(30)(50)))
 
 // without curring option 
+
+function sum(num, num1, num2) {
+    return num + num1 + num2
+}
+console.log(sum(20, 30, 20))
