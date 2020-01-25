@@ -506,28 +506,49 @@
 // }
 
 
-// console.log(finding(question, size))
+// // console.log(finding(question, size))
 
-// let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
-let question = [1, 2, 2, 3, 3, 4]
-let uniq = question
-    .map((name) => {
-        return {
-            count: 1,
-            name: name
-        }
-    })
-    .reduce((a, b) => {
-        a[b.name] = (a[b.name] || 0) + b.count
-        return a
-    }, {})
+// // let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
+// let question = [1, 2, 2, 3, 3, 4]
+// let uniq = question
+//     .map((name) => {
+//         return {
+//             count: 1,
+//             name: name
+//         }
+//     })
+//     .reduce((a, b) => {
+//         a[b.name] = (a[b.name] || 0) + b.count
+//         return a
+//     }, {})
 
-let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
+// let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
 
-console.log(duplicates) // [ 'Nancy' ]
+// console.log(duplicates) // [ 'Nancy' ]
 
 
 
-console.log([...new Set(
-    question.filter((value, index, self) => self.indexOf(value) !== index))]
-);
+// console.log([...new Set(
+//     question.filter((value, index, self) => self.indexOf(value) !== index))]
+// );
+
+
+
+
+// let quest = [2, 3, 4, 5, 6, 2, 3, 3, 4];
+// console.log(quest)
+// let duplicate = [];
+// let a, b;
+// function find(arr) {
+//     for (a = 0; a < arr.lenght; a++) {
+//         for (b = i + 1; b < arr.lenght; b++) {
+//             if (arr[a] == arr[b])
+//                 duplicate.push(arr[a])
+
+//         }
+//     }
+//     return duplicate;
+// }
+
+// console.log(find(quest))
+
