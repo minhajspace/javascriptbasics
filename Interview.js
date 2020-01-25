@@ -6,13 +6,15 @@
 
 function addThreeDigit(num) {
     return function (num2) {
-        return function (num3) {
-            return num + num2 + num3
+        return function (num3, num4) {
+            return num + num2 + num3 + num4
         }
     }
 }
 
-console.log(addThreeDigit((20)(30)(50)))
+console.log(addThreeDigit((20)(30)(50, 10)))
+
+// still this is curring function 
 
 // without curring option 
 
