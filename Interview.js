@@ -13,3 +13,5 @@ function addThreeDigit(num) {
 }
 
 console.log(addThreeDigit((20)(30)(50)))
+
+// without curring option 
