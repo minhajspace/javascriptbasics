@@ -49,15 +49,20 @@
 //  (1) Its own parameters  
 //  (2)  Outer Function 
 
-// example    
+// example  
+
+// Adding global variable 
+// adding inner function parameters 
+
+let global = 20;
 
 function outer(para1) {
     let n = 1;
-    function inner() {
+    function inner(para2) {
         let m = 5;
         let result = n + m
-        return (para1 + (n + m))
+        return (` ${para}  ${result} ${para2 * global}`)
     }
-    console.log(inner())
+    console.log(inner(10))
 }
 outer("Sum of the two number is  ")
