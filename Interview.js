@@ -89,7 +89,7 @@
 
 // function outerfunction(firstName) {
 //     inner = (lastName) => {
-//         return console.log(`My name is  ${firstName} ${lastName}`)
+//         return console.log(`My name is  ${firstName} ${lastName}`)                         
 //     }
 //     inner("khan")
 // }
@@ -99,27 +99,62 @@
 
 //  With the use of call and Apply we can change the contax of this to a given function  
 // There is only one difference between call and apply in apply we pass the argument of the function in array this is the only difference . 
-const car = {
-    brand: "Toyota",
-    getCarDetail: function (color, year, cost) {
-        return console.log(`the color of the car is ${color} and the year of perchase ${year} and cost of the car is ${cost} brand of the car is ${this.brand}`)
+// const car = {
+//     brand: "Toyota",
+//     getCarDetail: function (color, year, cost) {
+//         return console.log(`the color of the car is ${color} and the year of perchase ${year} and cost of the car is ${cost} brand of the car is ${this.brand}`)
+//     }
+// }
+
+// car.getCarDetail("red", 2020, 20000)
+
+// const car2 = {
+//     brand: "mahidra"
+// }
+
+// car.getCarDetail.call(car2, "yellow", 2018, 16000)
+
+// // Apply 
+
+
+
+// const car3 = {
+//     brand: "MG Hacta"
+// }
+
+// car.getCarDetail.apply(car3, ["green", 2016, 40000])
+
+
+
+// what is This keyword  
+
+// answer  this keyword refrence the object which is executing the current function 
+// when we are dealing with regular function this refrence the global object ; 
+
+function cars() {
+    console.log(this)
+}
+
+
+// when we are creating a function using new keyword the this is set this new function  ; 
+
+function fullName(name, lastName) {
+    this.name = name;
+    this.lastName = lastName
+}
+const fullName2 = new fullName("minhaj", "ahmad")
+
+
+// when A function is part of a object then this refrence the object itselft  
+// example  
+
+const myName = {
+    name: "Minhaj",
+    getName() {
+        return this.name
     }
+
 }
 
-car.getCarDetail("red", 2020, 20000)
-
-const car2 = {
-    brand: "mahidra"
-}
-
-car.getCarDetail.call(car2, "yellow", 2018, 16000)
-
-// Apply 
 
 
-
-const car3 = {
-    brand: "MG Hacta"
-}
-
-car.getCarDetail.apply(car3, ["green", 2016, 40000])
