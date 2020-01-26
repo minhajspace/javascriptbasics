@@ -52,17 +52,13 @@
 // example using  outer function parameters and inner function parameters 
 
 
-function outerfunction(firstName) {
-    inner = (lastName) => {
-        return console.log(`My name is  ${firstName} ${lastName}`)
-    }
-    inner("khan")
-}
-outerfunction("Minhaj")
-
-
-
-
+// function outerfunction(firstName) {
+//     inner = (lastName) => {
+//         return console.log(`My name is  ${firstName} ${lastName}`)
+//     }
+//     inner("khan")
+// }
+// outerfunction("Minhaj")
 
 
 
@@ -84,3 +80,17 @@ outerfunction("Minhaj")
 //     console.log(inner(10))
 // }
 // outer("Sum of the two number is  ")
+
+
+// what is bind ? 
+
+// The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
+
+function outerfunction(firstName) {
+    inner = (lastName) => {
+        return console.log(`My name is  ${firstName} ${lastName}`)
+    }
+    inner("khan")
+}
+outerfunction("Minhaj")
