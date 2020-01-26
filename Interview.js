@@ -131,18 +131,20 @@
 // answer  this keyword refrence the object which is executing the current function 
 // when we are dealing with regular function this refrence the global object ; 
 
-function cars() {
-    console.log(this)
-}
+// function cars() {
+//     console.log(this)
+// }
 
 
 // when we are creating a function using new keyword the this is set this new function  ; 
 
-// function fullName(name, lastName) {
-//     this.name = name;
-//     this.lastName = lastName
-// }
-// const fullName2 = new fullName("minhaj", "ahmad")
+function fullName(name, lastName) {
+    this.name = name;
+    this.lastName = lastName
+}
+const fullName2 = new fullName("minhaj", "ahmad")
+
+// this in condition this keyword set to this net function 
 
 
 // // when A function is part of a object then this refrence the object itselft  
