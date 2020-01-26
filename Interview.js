@@ -49,20 +49,38 @@
 //  (1) Its own parameters  
 //  (2)  Outer Function 
 
+// example using  outer function parameters and inner function parameters 
+
+
+function outerfunction(firstName) {
+    inner = (lastName) => {
+        return console.log(`My name is  ${firstName} ${lastName}`)
+    }
+    inner("khan")
+}
+outerfunction("Minhaj")
+
+
+
+
+
+
+
+
 // example  
 
 // Adding global variable 
 // adding inner function parameters 
 
-let global = 20;
+// let global = 20;
 
-function outer(para1) {
-    let n = 1;
-    function inner(para2) {
-        let m = 5;
-        let result = n + m
-        return (` ${para}  ${result} ${para2 * global}`)
-    }
-    console.log(inner(10))
-}
-outer("Sum of the two number is  ")
+// function outer(para1) {
+//     let n = 1;
+//     function inner(para2) {
+//         let m = 5;
+//         let result = n + m
+//         return (` ${para}  ${result} ${para2 * global}`)
+//     }
+//     console.log(inner(10))
+// }
+// outer("Sum of the two number is  ")
