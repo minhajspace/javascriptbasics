@@ -97,6 +97,7 @@
 
 //  Call method ? 
 
+//  With the use of call and Apply we can change the contax of this to a given function  
 const car = {
     brand: "Toyota",
     getCarDetail: function (color, year, cost) {
@@ -105,3 +106,9 @@ const car = {
 }
 
 car.getCarDetail("red", 2020, 20000)
+
+const car2 = {
+    brand: "mahidra"
+}
+
+car.getCarDetail.call(car2, "yellow", 2018, 16000)
