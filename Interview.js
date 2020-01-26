@@ -87,10 +87,21 @@
 // The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
 
 
-function outerfunction(firstName) {
-    inner = (lastName) => {
-        return console.log(`My name is  ${firstName} ${lastName}`)
+// function outerfunction(firstName) {
+//     inner = (lastName) => {
+//         return console.log(`My name is  ${firstName} ${lastName}`)
+//     }
+//     inner("khan")
+// }
+// outerfunction("Minhaj")
+
+//  Call method ? 
+
+const car = {
+    brand: "Toyota",
+    getCarDetail: function (color, year, cost) {
+        return console.log(`the color of the car is ${color} and the year of perchase ${year} and cost of the car is ${cost} brand of the car is ${this.brand}`)
     }
-    inner("khan")
 }
-outerfunction("Minhaj")
+
+car.getCarDetail("red", 2020, 20000)
