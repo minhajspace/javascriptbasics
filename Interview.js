@@ -138,23 +138,23 @@ function cars() {
 
 // when we are creating a function using new keyword the this is set this new function  ; 
 
-function fullName(name, lastName) {
-    this.name = name;
-    this.lastName = lastName
-}
-const fullName2 = new fullName("minhaj", "ahmad")
+// function fullName(name, lastName) {
+//     this.name = name;
+//     this.lastName = lastName
+// }
+// const fullName2 = new fullName("minhaj", "ahmad")
 
 
-// when A function is part of a object then this refrence the object itselft  
-// example  
+// // when A function is part of a object then this refrence the object itselft  
+// // example  
 
-const myName = {
-    name: "Minhaj",
-    getName() {
-        return this.name
-    }
+// const myName = {
+//     name: "Minhaj",
+//     getName() {
+//         return this.name
+//     }
 
-}
+// }
 
 
 
