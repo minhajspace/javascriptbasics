@@ -98,6 +98,7 @@
 //  Call method ? 
 
 //  With the use of call and Apply we can change the contax of this to a given function  
+// There is only one difference between call and apply in apply we pass the argument of the function in array this is the only difference . 
 const car = {
     brand: "Toyota",
     getCarDetail: function (color, year, cost) {
@@ -112,3 +113,13 @@ const car2 = {
 }
 
 car.getCarDetail.call(car2, "yellow", 2018, 16000)
+
+// Apply 
+
+
+
+const car3 = {
+    brand: "MG Hacta"
+}
+
+car.getCarDetail.apply(car3, ["green", 2016, 40000])
