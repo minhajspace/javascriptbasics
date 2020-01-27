@@ -150,13 +150,13 @@
 // // when A function is part of a object then this refrence the object itselft  
 // // example  
 
-const myName = {
-    name: "Minhaj",
-    getName() {
-        return this.name
-    }
+// const myName = {
+//     name: "Minhaj",
+//     getName() {
+//         return this.name
+//     }
 
-}
+// }
 
 // in this case this keyword refrence the object it self 
 
