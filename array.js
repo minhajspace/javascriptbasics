@@ -506,23 +506,23 @@ function finding(num, size) {
 }
 
 
-// // console.log(finding(question, size))
+// console.log(finding(question, size))
 
-// // let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
-// let question = [1, 2, 2, 3, 3, 4]
-// let uniq = question
-//     .map((name) => {
-//         return {
-//             count: 1,
-//             name: name
-//         }
-//     })
-//     .reduce((a, b) => {
-//         a[b.name] = (a[b.name] || 0) + b.count
-//         return a
-//     }, {})
+// let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl']
+let question = [1, 2, 2, 3, 3, 4]
+let uniq = question
+    .map((name) => {
+        return {
+            count: 1,
+            name: name
+        }
+    })
+    .reduce((a, b) => {
+        a[b.name] = (a[b.name] || 0) + b.count
+        return a
+    }, {})
 
-// let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
+let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
 
 // console.log(duplicates) // [ 'Nancy' ]
 
