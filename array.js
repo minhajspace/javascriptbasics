@@ -492,18 +492,18 @@
 
 // console.log(missing(questio))
 
-// let question = [1, 2, 2, 3, 3, 4]
-// let size = question.length
-// function finding(num, size) {
-//     result = [];
-//     for (let i = 0; i < size; i++) {
-//         for (let j = i + 0; j < size; j++) {
-//             if (num[i] == num[j])
-//                 console.log(num[j])
-//         }
-//     }
-//     return result
-// }
+let question = [1, 2, 2, 3, 3, 4]
+let size = question.length
+function finding(num, size) {
+    result = [];
+    for (let i = 0; i < size; i++) {
+        for (let j = i + 0; j < size; j++) {
+            if (num[i] == num[j])
+                console.log(num[j])
+        }
+    }
+    return result
+}
 
 
 // // console.log(finding(question, size))
