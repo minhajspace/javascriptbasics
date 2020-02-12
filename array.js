@@ -535,20 +535,20 @@ let duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1)
 
 
 
-// let quest = [2, 3, 4, 5, 6, 2, 3, 3, 4];
-// console.log(quest)
-// let duplicate = [];
-// let a, b;
-// function find(arr) {
-//     for (a = 0; a < arr.lenght; a++) {
-//         for (b = i + 1; b < arr.lenght; b++) {
-//             if (arr[a] == arr[b])
-//                 duplicate.push(arr[a])
+let quest = [2, 3, 4, 5, 6, 2, 3, 3, 4];
+console.log(quest)
+let duplicate = [];
+let a, b;
+function find(arr) {
+    for (a = 0; a < arr.lenght; a++) {
+        for (b = i + 1; b < arr.lenght; b++) {
+            if (arr[a] == arr[b])
+                duplicate.push(arr[a])
 
-//         }
-//     }
-//     return duplicate;
-// }
+        }
+    }
+    return duplicate;
+}
 
-// console.log(find(quest))
+console.log(find(quest))
 
