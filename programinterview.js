@@ -165,10 +165,19 @@
 // when number divider by 3 show fizz and number is divide by 5 show buzz if number divide by 3 & 5 both show fizzbuzz 
 
 
-fizzbuzz = number =>{
-    if (number % 3 === 0 && number % 5 ===0) return console.log('fizzbuzz');
-   if ( number % 3 === 0 ) return console.log("fizz") ;
-   if (number % 5 ===0 ) return console.log('buzz');
-}
+// fizzbuzz = number =>{
+//     if (number % 3 === 0 && number % 5 ===0) return console.log('fizzbuzz');
+//    if ( number % 3 === 0 ) return console.log("fizz") ;
+//    if (number % 5 ===0 ) return console.log('buzz');
+// }
 
-fizzbuzz(3);
+// fizzbuzz(3);
+
+// method 2 
+fizzbuzz = (number) => {
+     return number %  3 === 0 && number %  5 === 0 ? console.log('fizzbuzz')
+    : number %  3 === 0  ? console.log('fizz')
+    : number %  5 === 0  ? console.log('buzz')
+    : console.log(`${number} is not divisible 3 or 5  `) ;
+}
+fizzbuzz(12); 
