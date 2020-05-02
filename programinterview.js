@@ -158,3 +158,17 @@
 // };
 
 // areAnagrams(20, 30);
+
+
+// femouse interview question  FizzBuzz questiong 
+
+// when number divider by 3 show fizz and number is divide by 5 show buzz if number divide by 3 & 5 both show fizzbuzz 
+
+
+fizzbuzz = number =>{
+    if (number % 3 === 0 && number % 5 ===0) return console.log('fizzbuzz');
+   if ( number % 3 === 0 ) return console.log("fizz") ;
+   if (number % 5 ===0 ) return console.log('buzz');
+}
+
+fizzbuzz(3);
