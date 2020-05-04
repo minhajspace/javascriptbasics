@@ -199,6 +199,6 @@ let str ='hello' ;
 
 palindrome=(str)=>{
    let palindrome = str.split('').reverse().join('');
-    return  str === palindrome ? true :false 
+    return  str === palindrome ;
 }
-console.log(palindrome('bca'));
+console.log(palindrome('abba'));
