@@ -174,10 +174,31 @@
 // fizzbuzz(3);
 
 // method 2 
-fizzbuzz = (number) => {
-     return number %  3 === 0 && number %  5 === 0 ? console.log('fizzbuzz')
-    : number %  3 === 0  ? console.log('fizz')
-    : number %  5 === 0  ? console.log('buzz')
-    : console.log(`${number} is not divisible 3 or 5  `) ;
+// fizzbuzz = (number) => {
+//      return number %  3 === 0 && number %  5 === 0 ? console.log('fizzbuzz')
+//     : number %  3 === 0  ? console.log('fizz')
+//     : number %  5 === 0  ? console.log('buzz')
+//     : console.log(`${number} is not divisible 3 or 5  `) ;
+// }
+// fizzbuzz(12); 
+
+//  string reversal program 
+
+let str ='hello' ;
+// const rev = str.split('').reverse().join('')
+// console.log(rev)
+
+// strReverse = str => {
+//      let reversed ;
+//     for(let element of str){
+//         reversed = element + reversed ; 
+//       return reversed;
+//     }
+// }
+// console.log(strReverse('hello'));
+
+palindrome=(str)=>{
+   let palindrome = str.split('').reverse().join('');
+    return  str === palindrome ? true :false 
 }
-fizzbuzz(12); 
+console.log(palindrome('bca'));
