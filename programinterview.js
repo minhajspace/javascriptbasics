@@ -197,21 +197,20 @@ let str ='hello' ;
 // }
 // console.log(strReverse('hello'));
 
-palindrome=(str)=>{
-   let palindrome = str.split('').reverse().join('');
-    return  str === palindrome ;
-}
-console.log(palindrome('abba'));
+// palindrome=(str)=>{
+//    let palindrome = str.split('').reverse().join('');
+//     return  str === palindrome ;
+// }
+// console.log(palindrome('abba'));
 
 
 // another method to solve this problem 
 
-// palindrome = (str) =>{
-//     str.split('').every((char,i)=>{
-//         return char === str[str.length - i -1];
-
-//     });
-// }
+palindrome = (str) =>{
+    str.split('').every((char,i)=>{
+        return char === str[str.length - i -1];
+    });
+}
 // console.log(palindrome('baca'));
 
 // palindrome = (str) =>{
