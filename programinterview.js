@@ -202,3 +202,40 @@ palindrome=(str)=>{
     return  str === palindrome ;
 }
 console.log(palindrome('abba'));
+
+
+// another method to solve this problem 
+
+// palindrome = (str) =>{
+//     str.split('').every((char,i)=>{
+//         return char === str[str.length - i -1];
+
+//     });
+// }
+// console.log(palindrome('baca'));
+
+// palindrome = (str) =>{
+//    return str.split('').every((char,index)=>{
+//     return (char ===str[str.length - index - 1 ]) 
+       
+//     })
+// }
+// console.log(palindrome('abba'));
+
+// reverseNumber = (number) =>{
+//  let reverse =  number.toString().split('').reverse().join('')
+//   return parseInt(reverse);
+
+// }
+
+// reverseNumber =(number)=>{
+//   let reverse = number.toString().split('');
+//   console.log(reverse.length)
+//   result = [];
+//   for(let i = reverse.length ; i >= 0 ; i--){
+//     return result.push([i])
+//   }
+   
+  
+// }
+// console.log(reverseNumber(2361));
