@@ -221,20 +221,12 @@ palindrome = (str) =>{
 // }
 // console.log(palindrome('abba'));
 
-// reverseNumber = (number) =>{
-//  let reverse =  number.toString().split('').reverse().join('')
-//   return parseInt(reverse);
-
-// }
-
-// reverseNumber =(number)=>{
-//   let reverse = number.toString().split('');
-//   console.log(reverse.length)
-//   result = [];
-//   for(let i = reverse.length ; i >= 0 ; i--){
-//     return result.push([i])
-//   }
-   
-  
-// }
-// console.log(reverseNumber(2361));
+reverseNumber = (number) =>{
+ let reverse =  number
+ .toString()
+ .split('')
+ .reverse()
+ .join('')
+ return reverse
+}
+console.log(reverseNumber(2361));
