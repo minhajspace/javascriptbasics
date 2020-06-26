@@ -184,7 +184,7 @@
 
 //  string reversal program 
 
-let str ='hello' ;
+// let str ='hello' ;
 // const rev = str.split('').reverse().join('')
 // console.log(rev)
 
@@ -206,11 +206,11 @@ let str ='hello' ;
 
 // another method to solve this problem 
 
-palindrome = (str) =>{
-    str.split('').every((char,i)=>{
-        return char === str[str.length - i -1];
-    });
-}
+// palindrome = (str) =>{
+//     str.split('').every((char,i)=>{
+//         return char === str[str.length - i -1];
+//     });
+// }
 // console.log(palindrome('baca'));
 
 // palindrome = (str) =>{
@@ -221,12 +221,106 @@ palindrome = (str) =>{
 // }
 // console.log(palindrome('abba'));
 
-reverseNumber = (number) =>{
- let reverse =  number
- .toString()
- .split('')
- .reverse()
- .join('')
- return reverse
+// reverseNumber = (number) =>{
+  
+//  let reverse =  number
+//  .toString()
+//  .split('')
+//  .reverse()
+//  .join('')
+//  console.log(reverse)
+//  if (number > 0 ){
+//      return parseInt(reverse) 
+//  }
+//  else {
+//     return parseInt(reverse * -1)
+//  }
+  
+// }
+// console.log(reverseNumber(-2361));
+
+
+    
+// let arr = [23,24, 3, 6, 45, 7, 8, 9]
+// let reversearr = [];
+// for(let i = arr.length-1 ; i >= 0 ; i--){
+//     reversearr.push(arr[i])
+// }
+
+// console.warn(reversearr)
+
+
+// chunk = (arr,size) =>{
+//     console.log(arr,size)
+//     chunked = [];
+
+//     for(let element of arr){
+//         console.log(element)
+//         let last = chunked[chunked.length -1];
+//         console.log(last)
+//         if(!last || last.length === size  ){
+//             console.log('block runs')
+//             chunked.push[(element)]
+//         } else {
+//             console.log('else blcok runs')
+//             last.push(element)
+//         }
+//     }
+
+//     return chunked ; 
+
+
+// }
+// console.log(chunk([1,2,3,4,5],4))
+
+
+
+
+
+
+
+// function chunck (arr,size){
+//     const chuncked = [];
+//     let index = 0 ;
+//     while(index < arr.length){
+//         chuncked.push(arr.slice())
+//     }
+
+// }
+
+
+// if (true){
+//     var person = 'Minhaj'
+//     console.log(person)
+// }
+
+// console.log(person)
+
+
+const arr = [1, 2, 3, 4,5];
+
+chunk = (arr, size) => {
+    for (let element of arr) {
+        let newarr = arr.splice(0,size);
+        console.log(newarr);
+       
+    }
 }
-console.log(reverseNumber(2361));
+console.log(chunk(arr, 2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

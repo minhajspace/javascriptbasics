@@ -115,3 +115,14 @@
 // const record = studentRecord;
 // console.log(record);
 // console.log;
+
+
+const arr = [1, 2, 3, 4, 5, 6, 78, 9, 1, 23, 5, 6, 4, 8, 9];
+
+chunk = (arr, size) => {
+    for (let element of arr) {
+        let newarr = arr.split(size);
+        console.log(newarr);
+    }
+}
+console.log(chunk(arr, 2));
