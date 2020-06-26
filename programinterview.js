@@ -310,23 +310,34 @@
 
 const arr = [1,2,3,4,5,6,7,8,9];
 
-function chunck  (arr,size){
+// // function chunck  (arr,size){
+// //     chuncked = [];
+// //     for(let element of arr){
+// //         last = chuncked[chuncked.length-1]
+// //         console.log(last);
+// //         if(!last || last.length ==size){
+// //             chuncked.push([element])
+// //         } else {
+// //            last.push(element)
+// //         }
+// //     }
+
+// //     return chuncked;
+
+// // }
+
+// // console.log(chunck(arr,3));
+
+function chunk (arr,size){
     chuncked = [];
-    for(let element of arr){
-        last = chuncked[chuncked.length-1]
-        console.log(last);
-        if(!last || last.length ==size){
-            chuncked.push([element])
-        } else {
-           last.push(element)
-        }
+    let index = 0 ;
+    while(index < arr.length){
+       chuncked.push(arr.slice(index,index + size))
+       index += size
     }
-
-    return chuncked;
-
+    return chuncked
 }
-
-console.log(chunck(arr,3));
+console.log(chunk(arr,2))
 
 
 
