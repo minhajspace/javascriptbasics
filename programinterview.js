@@ -342,17 +342,28 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 //                               palindrome
 
+// function string(str) {
+//     let temp = '';
+//     for (let element of str) {
+//         console.log(element);
+//         temp = element + temp;
+//     }
+//     return str === temp ? true : false;
+
+// }
+
+// console.log(string('abba'))
+
+// one line solution 
+
+
 function string(str) {
-    let temp = '';
-    for (let element of str) {
-        console.log(element);
-        temp = element + temp;
-    }
+    temp = str.split('').reverse().join('')
     return str === temp ? true : false;
 
 }
 
-console.log(string('abba'))
+console.log(string('hello'))
 
 
 
