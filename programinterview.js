@@ -328,16 +328,31 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 // // console.log(chunck(arr,3));
 
-function chunk (arr,size){
-    chuncked = [];
-    let index = 0 ;
-    while(index < arr.length){
-       chuncked.push(arr.slice(index,index + size))
-       index += size
+// function chunk (arr,size){
+//     chuncked = [];
+//     let index = 0 ;
+//     while(index < arr.length){
+//        chuncked.push(arr.slice(index,index + size))
+//        index += size
+//     }
+//     return chuncked
+// }
+// console.log(chunk(arr,2))
+
+
+//                               palindrome
+
+function string(str) {
+    let temp = '';
+    for (let element of str) {
+        console.log(element);
+        temp = element + temp;
     }
-    return chuncked
+    return str === temp ? true : false;
+
 }
-console.log(chunk(arr,2))
+
+console.log(string('abba'))
 
 
 
