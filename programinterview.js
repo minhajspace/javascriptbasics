@@ -357,15 +357,42 @@ const arr = [1,2,3,4,5,6,7,8,9];
 // one line solution 
 
 
-function string(str) {
-    temp = str.split('').reverse().join('')
-    return str === temp ? true : false;
+// // function string(str) {
+// //     temp = str.split('').reverse().join('');
+// //     return str === temp ? true : false;
+
+// // }
+
+// // console.log(string('hello'))
+
+                                               // number reversal with - symbol 
+
+
+// function number(str) {
+//     temp = str.toString().split('').reverse().join('')
+//     result = parseInt(temp);
+//     if (str > 0) {
+//         return result;
+//     } else {
+//         return -1 * result;
+//     }
+
+
+// }
+
+// console.log(number(23))
+
+
+
+function number(str) {
+    temp = str.toString().split('').reverse().join('')
+    result = parseInt(temp);
+   return  str > 0 ? result :-1*result ; 
+
 
 }
 
-console.log(string('hello'))
-
-
+console.log(number(-23))
 
 
 
