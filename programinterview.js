@@ -403,16 +403,20 @@ const arr = [1,2,3,4,5,6,7,8,9];
 const greeting = 'hello world'
 const greeting_object = {}
 
-for (let element of greeting) {
-    if (!greeting_object[element]) {
-        greeting_object[element] = 1;
-    }
-    else {
-        greeting_object[element]++
-    }
-}
-console.log(greeting_object);
+// for (let element of greeting) {
+//     if (!greeting_object[element]) {
+//         greeting_object[element] = 1;
+//     }
+//     else {
+//         greeting_object[element]++
+//     }
+// }
+// console.log(greeting_object);
 
+for (let element of greeting){
+    greeting_object[element]  =greeting_object[element] + 1 || 1  ;
+}
+console.log(greeting_object)
 
 
 
