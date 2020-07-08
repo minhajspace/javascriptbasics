@@ -395,28 +395,25 @@ const arr = [1,2,3,4,5,6,7,8,9];
 // console.log(number(-23))
 
 
-// solving char related problem in  created object 
+// solving  max or min char problem  
 
-
-
-
-const greeting = 'hello world'
-const greeting_object = {}
-
-// for (let element of greeting) {
-//     if (!greeting_object[element]) {
-//         greeting_object[element] = 1;
-//     }
-//     else {
-//         greeting_object[element]++
-//     }
-// }
-// console.log(greeting_object);
-
-for (let element of greeting){
-    greeting_object[element]  =greeting_object[element] + 1 || 1  ;
+function maxChar (string){
+  const  charObject = {}
+  let  maxChar = 0 ;
+  let max = '';
+    for(let element of string){  
+        charObject[element] = charObject[element] + 1 || 1
+    }
+    for(let value in charObject){
+        if(charObject[value] > maxChar){
+            maxChar = charObject[value]
+            max = value
+        }
+    }
+   return max
 }
-console.log(greeting_object)
+
+console.log(maxChar('ccccababa'));
 
 
 
