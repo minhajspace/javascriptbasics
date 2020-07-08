@@ -384,15 +384,34 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 
 
-function number(str) {
-    temp = str.toString().split('').reverse().join('')
-    result = parseInt(temp);
-   return  str > 0 ? result :-1*result ; 
+// function number(str) {
+//     temp = str.toString().split('').reverse().join('')
+//     result = parseInt(temp);
+//    return  str > 0 ? result :-1*result ; 
 
 
+// }
+
+// console.log(number(-23))
+
+
+// solving char related problem in  created object 
+
+
+
+
+const greeting = 'hello world'
+const greeting_object = {}
+
+for (let element of greeting) {
+    if (!greeting_object[element]) {
+        greeting_object[element] = 1;
+    }
+    else {
+        greeting_object[element]++
+    }
 }
-
-console.log(number(-23))
+console.log(greeting_object);
 
 
 
