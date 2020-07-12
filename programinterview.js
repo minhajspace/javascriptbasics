@@ -417,39 +417,55 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 //                      Anagrams 
 
-function anagrams (stringA,stringB){
- const string1 = stringA.replace(/[^\w]/g,'').toLowerCase();
- const string2 = stringB.replace(/[^\w]/g, '').toLowerCase();
-console.log(string1);
-console.log(string2);
-const objstringA = {} ;
-const objStringB = {};
+// function anagrams (stringA,stringB){
+//  const string1 = stringA.replace(/[^\w]/g,'').toLowerCase();
+//  const string2 = stringB.replace(/[^\w]/g, '').toLowerCase();
+// console.log(string1);
+// console.log(string2);
+// const objstringA = {} ;
+// const objStringB = {};
 
-for (let element of string1){
-    objstringA[element] = objstringA[element]+1 || 1 ;
-}
-console.log(objstringA);
-for (let element of string2){
-    objStringB[element] = objStringB[element]+1 || 1; 
-}
-console.log(objStringB);
+// for (let element of string1){
+//     objstringA[element] = objstringA[element]+1 || 1 ;
+// }
+// console.log(objstringA);
+// for (let element of string2){
+//     objStringB[element] = objStringB[element]+1 || 1; 
+// }
+// console.log(objStringB);
 
-if(Object.keys(objstringA).length !== Object.keys(objStringB).length);{
-   console.log(false);
-}
+// if(Object.keys(objstringA).length !== Object.keys(objStringB).length);{
+//    console.log(false);
+// }
 
-for(let element in objstringA){
-    if(objstringA[element] !== objStringB[element]){
-        console.log(false);
-    }
-    else {
-        console.log(true);
-    }
-}
+// for(let element in objstringA){
+//     if(objstringA[element] !== objStringB[element]){
+//         console.log(false);
+//     }
+//     else {
+//         console.log(true);
+//     }
+// }
     
+// }
+
+// anagrams('hEllo','hlleo')
+
+
+// cleaner way to write code we can use helper function to consize our code   
+
+function strclean(string) {
+    const obj = {};
+    for (let value of string.replace(/[^\w]/g, '').toLowerCase()) {
+        obj[value] = obj[value] + 1 || 1;
+    }
+    return obj
 }
 
-anagrams('hEllo','hell')
+console.log(strclean('hello!'));
+
+
+
 
 
 
