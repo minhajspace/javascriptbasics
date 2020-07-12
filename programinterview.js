@@ -397,25 +397,59 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 // solving  max or min char problem  
 
-function maxChar (string){
-  const  charObject = {}
-  let  maxChar = 0 ;
-  let max = '';
-    for(let element of string){  
-        charObject[element] = charObject[element] + 1 || 1
-    }
-    for(let value in charObject){
-        if(charObject[value] > maxChar){
-            maxChar = charObject[value]
-            max = value
-        }
-    }
-   return max
+// function maxChar (string){
+//   const  charObject = {}
+//   let  maxChar = 0 ;
+//   let max = '';
+//     for(let element of string){  
+//         charObject[element] = charObject[element] + 1 || 1
+//     }
+//     for(let value in charObject){
+//         if(charObject[value] > maxChar){
+//             maxChar = charObject[value]
+//             max = value
+//         }
+//     }
+//    return max
+// }
+
+// console.log(maxChar('ccccababa'));
+
+//                      Anagrams 
+
+function anagrams (stringA,stringB){
+ const string1 = stringA.replace(/[^\w]/g,'').toLowerCase();
+ const string2 = stringB.replace(/[^\w]/g, '').toLowerCase();
+console.log(string1);
+console.log(string2);
+const objstringA = {} ;
+const objStringB = {};
+
+for (let element of string1){
+    objstringA[element] = objstringA[element]+1 || 1 ;
+}
+console.log(objstringA);
+for (let element of string2){
+    objStringB[element] = objStringB[element]+1 || 1; 
+}
+console.log(objStringB);
+
+if(Object.keys(objstringA).length !== Object.keys(objStringB).length);{
+   console.log(false);
 }
 
-console.log(maxChar('ccccababa'));
+for(let element in objstringA){
+    if(objstringA[element] !== objStringB[element]){
+        console.log(false);
+    }
+    else {
+        console.log(true);
+    }
+}
+    
+}
 
-
+anagrams('hEllo','hell')
 
 
 
