@@ -462,22 +462,26 @@ function strclean(string) {
     return obj
 }
 
-console.log(strclean('hello!'));
 
 function anagrams(fristInput,secondInput){
    const aurgmentOne =  strclean(fristInput)
   const aurgmentTwo =   strclean(secondInput)
-  console.log(aurgmentOne,aurgmentTwo);
+ // console.log(aurgmentOne,aurgmentTwo);
   if(Object.keys(aurgmentOne).length !== Object.keys(aurgmentTwo).length)  return false
-
-  
- 
+  if(Object.keys(aurgmentOne).length === Object.keys(aurgmentTwo).length){
+     for(let element in aurgmentOne){
+         if(aurgmentOne[element] === aurgmentTwo[element]){
+             return true
+         } 
+         return false
+     }
+  }
   
 
 }
 
 
-console.log(anagrams('hello','hell0'))
+console.log(anagrams('rail safety','fairy tales'))
 
 
 
