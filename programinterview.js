@@ -454,34 +454,38 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 // cleaner way to write code we can use helper function to consize our code   
 
-function strclean(string) {
-    const obj = {};
-    for (let value of string.replace(/[^\w]/g, '').toLowerCase()) {
-        obj[value] = obj[value] + 1 || 1;
-    }
-    return obj
-}
+// function strclean(string) {
+//     const obj = {};
+//     for (let value of string.replace(/[^\w]/g, '').toLowerCase()) {
+//         obj[value] = obj[value] + 1 || 1;
+//     }
+//     return obj
+// }
 
 
-function anagrams(fristInput,secondInput){
-   const aurgmentOne =  strclean(fristInput)
-  const aurgmentTwo =   strclean(secondInput)
- // console.log(aurgmentOne,aurgmentTwo);
-  if(Object.keys(aurgmentOne).length !== Object.keys(aurgmentTwo).length)  return false
-  if(Object.keys(aurgmentOne).length === Object.keys(aurgmentTwo).length){
-     for(let element in aurgmentOne){
-         if(aurgmentOne[element] === aurgmentTwo[element]){
-             return true
-         } 
-         return false
-     }
-  }
+// function anagrams(fristInput,secondInput){
+//    const aurgmentOne =  strclean(fristInput)
+//   const aurgmentTwo =   strclean(secondInput)
+//  // console.log(aurgmentOne,aurgmentTwo);
+//   if(Object.keys(aurgmentOne).length !== Object.keys(aurgmentTwo).length)  return false
+//   if(Object.keys(aurgmentOne).length === Object.keys(aurgmentTwo).length){
+//      for(let element in aurgmentOne){
+//          if(aurgmentOne[element] === aurgmentTwo[element]){
+//              return true
+//          } 
+//          return false
+//      }
+//   }
   
 
-}
+// }
+ function anagrams(inputA,inputB){
+     aurgmentA = inputA.replace(/[^\w]/g,'').toLowerCase().split('').sort().join('');
+     aurgmentB = inputB.replace(/[^\w]/g,'').toLowerCase().split('').sort().join('');
+     return aurgmentA === aurgmentB ? true : false 
+ }
 
-
-console.log(anagrams('rail safety','fairy tales'))
+console.log(anagrams('cat','doga'))
 
 
 
