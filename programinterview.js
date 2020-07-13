@@ -464,10 +464,20 @@ function strclean(string) {
 
 console.log(strclean('hello!'));
 
+function anagrams(fristInput,secondInput){
+   const aurgmentOne =  strclean(fristInput)
+  const aurgmentTwo =   strclean(secondInput)
+  console.log(aurgmentOne,aurgmentTwo);
+  if(Object.keys(aurgmentOne).length !== Object.keys(aurgmentTwo).length)  return false
+
+  
+ 
+  
+
+}
 
 
-
-
+console.log(anagrams('hello','hell0'))
 
 
 
