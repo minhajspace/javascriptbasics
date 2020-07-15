@@ -490,17 +490,24 @@ const arr = [1,2,3,4,5,6,7,8,9];
 // using sort method and also using helper function   
 
 
-function cleanUp(string){
-    return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
-}
-function anagrams(aug1,aug2){
-    return  cleanUp(aug1) === cleanUp(aug2)
-}
+// function cleanUp(string){
+//     return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+// }
+// function anagrams(aug1,aug2){
+//     return  cleanUp(aug1) === cleanUp(aug2)
+// }
 
-console.log(anagrams('cat','tac'))
+// console.log(anagrams('cat','tac'))
 
 
+// function Captalization (string){
+//     const first = string[0].toUpperCase();
+//     const rest =string.slice(1)
+//     const result = [first,rest]
+//     return result.join('')
+// }
 
+// console.log(Captalization('hey how are  you '));
 
 
 
