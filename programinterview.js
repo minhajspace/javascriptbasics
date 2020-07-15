@@ -507,7 +507,15 @@ const arr = [1,2,3,4,5,6,7,8,9];
 //     return result.join('')
 // }
 
-// console.log(Captalization('hey how are  you '));
 
+function Captalization (string) {
+    const  word = [];
+    for(let element of string.split(' ')){
+      word.push(element[0].toUpperCase() + element.slice(1))
+    }
+   return word
+}
+
+ console.log(Captalization('hey how are  you '));
 
 
