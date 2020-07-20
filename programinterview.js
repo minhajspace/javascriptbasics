@@ -508,13 +508,29 @@ const arr = [1,2,3,4,5,6,7,8,9];
 // }
 
 
-function Captalization (string) {
-    const  word = [];
-    for(let element of string.split(' ')){
-      word.push(element[0].toUpperCase() + element.slice(1))
-    }
-   return word
-}
+// function Captalization (string) {
+//     const  word = [];
+//     for(let element of string.split(' ')){
+//       word.push(element[0].toUpperCase() + element.slice(1))
+//     }
+//    return word
+// }
+
+
+function Captalization(string){
+  let result = result[0].toUpperCase()
+       for(let i=0 ; i < result.length ; i++){
+         if(result[i-1 === '']){
+           result += result[i].toUpperCase();
+         } else {
+           result += result[i]
+         }
+       }
+       return result ; 
+    
+  }
+  
+
 
  console.log(Captalization('hey how are  you '));
 
