@@ -518,18 +518,18 @@ const arr = [1,2,3,4,5,6,7,8,9];
 
 
 function Captalization(string){
-  let result = result[0].toUpperCase()
-       for(let i=0 ; i < result.length ; i++){
-         if(result[i-1 === '']){
-           result += result[i].toUpperCase();
+  let result = string[0].toUpperCase()
+       for(let i=0 ; i < string.length ; i++){
+         if(string[i-1 === '']){
+           result += string[i].toUpperCase();
          } else {
-           result += result[i]
+           result += string[i]
          }
        }
        return result ; 
     
   }
-  
+
 
 
  console.log(Captalization('hey how are  you '));
