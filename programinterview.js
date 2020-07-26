@@ -517,21 +517,37 @@ const arr = [1,2,3,4,5,6,7,8,9];
 // }
 
 
-function Captalization(string){
-  let result = string[0].toUpperCase()
-       for(let i=0 ; i < string.length ; i++){
-         if(string[i-1 === '']){
-           result += string[i].toUpperCase();
-         } else {
-           result += string[i]
-         }
-       }
-       return result ; 
+// function Captalization(string){
+//   let result = string[0].toUpperCase()
+//        for(let i=0 ; i < string.length ; i++){
+//          if(string[i-1 === '']){
+//            result += string[i].toUpperCase();
+//          } else {
+//            result += string[i]
+//          }
+//        }
+//        return result ; 
     
+//   }
+
+// setup counter  
+
+function step(number){
+  let space = ' '; 
+  for(let i = 0 ; i <= number ; i++){
+    for(let j = 0 ; j <=number ; j++){
+     if(j <= i ){
+       space =+ '#'
+     } else {
+       space =+ ' '
+     }
+    }
   }
+  console.log(space)
+}
 
 
-
- console.log(Captalization('hey how are  you '));
+step(4)
+//  console.log(Captalization('hey how are  you '));
 
 
