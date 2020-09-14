@@ -537,7 +537,7 @@ function step(number){
   for(let i = 0 ; i <= number ; i++){
     for(let j = 0 ; j <=number ; j++){
      if(j <= i ){
-       space += '#'
+       space += '#' 
      } else {
        space += ' '
      }

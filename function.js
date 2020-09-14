@@ -565,3 +565,10 @@
 //     return console.log(`numa is ${x} and number b${y}`)
 // }
 // (exchange(20, 30))
+
+
+//  program to pick first latter and trun into capital latter 
+let santance = 'hello how are you dear ';
+let restwords = santance.slice(1);
+let cap = santance[0].toUpperCase();
+console.log(cap + restwords)
