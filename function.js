@@ -572,3 +572,9 @@ let santance = 'hello how are you dear ';
 let restwords = santance.slice(1);
 let cap = santance[0].toUpperCase();
 console.log(cap + restwords)
+
+// second way 
+
+let para = 'hello how are you dear';
+let answer = para[0].toUpperCase() + para.slice(1);
+console.log(answer);
