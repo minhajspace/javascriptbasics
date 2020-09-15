@@ -556,15 +556,15 @@
 // }
 // reverseString('');
 
-// function exchange(x, y) {
-//     x = x + y;
-//     y = x - y
-//     x = x - y
+function exchange(x, y) {
+    x = x + y;
+    y = x - y
+    x = x - y
 
 
-//     return console.log(`numa is ${x} and number b${y}`)
-// }
-// (exchange(20, 30))
+    return console.log(`numa is ${x} and number b${y}`)
+}
+(exchange(20, 30))
 
 
 //  program to pick first latter and trun into capital latter 
