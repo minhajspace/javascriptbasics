@@ -587,3 +587,17 @@ capitalization = (words) => {
 }
 
 console.log(capitalization('hello'));
+
+
+
+let para = "hello how are you dear";
+const paraArray = para.split(" ");
+for (let element of paraArray) {
+    let capLatter = (element[0].toUpperCase());
+    let restWord = element.slice(1);
+    for (let element of capLatter) {
+        const result = (element + restWord);
+        console.log(result)
+
+    }
+}
