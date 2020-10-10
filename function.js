@@ -535,16 +535,16 @@
 </input> */}
 
 
-string rever function 
+// string rever function 
 
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
-console.log(reverseString("hello"));
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
+// }
+// console.log(reverseString("hello"));
 
-function reverseString(str) {
+// function reverseString(str) {
 
-    var newString = [];
+//     var newString = [];
 
 
 
@@ -556,15 +556,15 @@ function reverseString(str) {
 // }
 // reverseString('');
 
-function exchange(x, y) {
-    x = x + y;
-    y = x - y
-    x = x - y
+// function exchange(x, y) {
+//     x = x + y;
+//     y = x - y
+//     x = x - y
 
 
-    return console.log(`numa is ${x} and number b${y}`)
-}
-(exchange(20, 30))
+//     return console.log(`numa is ${x} and number b${y}`)
+// }
+// (exchange(20, 30))
 
 
 //  program to pick first latter and trun into capital latter 
@@ -577,4 +577,13 @@ console.log(cap + restwords)
 
 let para = 'hello how are you dear';
 let answer = para[0].toUpperCase() + para.slice(1);
-console.log(answer);
+console.log(answer);4
+
+
+capitalization = (words) => {
+    console.log(words.slice(1));
+    let result = ` ${words[0].toUpperCase()}${words.slice(1)}`;
+    return result;
+}
+
+console.log(capitalization('hello'));
