@@ -602,11 +602,28 @@
 //     }
 // }
 
-conVertCap = (string)=> {
-const result = [] ; 
-for(let value of string.split(" ")){
-    result.push(value[0].toUpperCase() + value.slice(1));
+// conVertCap = (string)=> {
+// const result = [] ; 
+// for(let value of string.split(" ")){
+//     result.push(value[0].toUpperCase() + value.slice(1));
+// }
+// return result.join(" ")
+// }
+// console.log(conVertCap('hello how arey you dear'));
+
+pattern = (n) =>{
+    for(let row=0; row > n ;row++){
+        let stair ; 
+        {
+            for(let column=0;column > n;column ++){
+                if(column <= row){
+                    stair += "#"
+                }else {
+                    stair +=" "
+                }
+            }
+        }
+    }
+    
 }
-return result.join(" ")
-}
-console.log(conVertCap('hello how arey you dear'));
+console.log(pattern(5))
