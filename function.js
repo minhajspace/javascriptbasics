@@ -568,36 +568,45 @@
 
 
 //  program to pick first latter and trun into capital latter 
-let santance = 'hello how are you dear ';
-let restwords = santance.slice(1);
-let cap = santance[0].toUpperCase();
-console.log(cap + restwords)
+// let santance = 'hello how are you dear ';
+// let restwords = santance.slice(1);
+// let cap = santance[0].toUpperCase();
+// console.log(cap + restwords)
 
-// second way 
+// // second way 
 
-let para = 'hello how are you dear';
-let answer = para[0].toUpperCase() + para.slice(1);
-console.log(answer);4
+// let para = 'hello how are you dear';
+// let answer = para[0].toUpperCase() + para.slice(1);
+// console.log(answer);4
 
 
-capitalization = (words) => {
-    console.log(words.slice(1));
-    let result = ` ${words[0].toUpperCase()}${words.slice(1)}`;
-    return result;
+// capitalization = (words) => {
+//     console.log(words.slice(1));
+//     let result = ` ${words[0].toUpperCase()}${words.slice(1)}`;
+//     return result;
+// }
+
+// console.log(capitalization('hello'));
+
+
+
+// let para = "hello how are you dear";
+// const paraArray = para.split(" ");
+// for (let element of paraArray) {
+//     let capLatter = (element[0].toUpperCase());
+//     let restWord = element.slice(1);
+//     for (let element of capLatter) {
+//         const result = (element + restWord);
+//         console.log(result)
+
+//     }
+// }
+
+conVertCap = (string)=> {
+const result = [] ; 
+for(let value of string.split(" ")){
+    result.push(value[0].toUpperCase() + value.slice(1));
 }
-
-console.log(capitalization('hello'));
-
-
-
-let para = "hello how are you dear";
-const paraArray = para.split(" ");
-for (let element of paraArray) {
-    let capLatter = (element[0].toUpperCase());
-    let restWord = element.slice(1);
-    for (let element of capLatter) {
-        const result = (element + restWord);
-        console.log(result)
-
-    }
+return result.join(" ")
 }
+console.log(conVertCap('hello how arey you dear'));
