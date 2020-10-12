@@ -634,7 +634,7 @@
 // Recursion start from here 
 
 function printNumber (number){
-  console.log(number)
+  console.log(number % 2)
 }
 
 printNumber(20)
