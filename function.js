@@ -611,20 +611,30 @@
 // }
 // console.log(conVertCap('hello how arey you dear'));
 
-pattern = (n) =>{
-    for(let row=0; row < n ;row++){
-        let stair =''; 
-        {
-            for(let column=0;column < n;column ++){
-                if(column <= row){
-                    stair += "#";
-                }else {
-                    stair +=" ";
-                }
-            }
-            console.log(stair);
-        }
-    }
+// pattern = (n) =>{
+//     for(let row=0; row < n ;row++){
+//         let stair =''; 
+//         {
+//             for(let column=0;column < n;column ++){
+//                 if(column <= row){
+//                     stair += "#";
+//                 }else {
+//                     stair +=" ";
+//                 }
+//             }
+//             console.log(stair)
+//         }
+     
+//     }
     
+// }
+// console.log(pattern(5))
+
+
+// Recursion start from here 
+
+function printNumber (number){
+  console.log(number)
 }
-console.log(pattern(5))
+
+printNumber(20)
